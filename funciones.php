@@ -60,13 +60,17 @@ function getPiePagina() {
 }
 
 function obtenerMedida ($tipo) { // Output: unidad de medida fisica segun el tipo recibido
+
     $tipo = strtolower($tipo);
-    if ($tipo == "alimentacion") {
+
+    if ($tipo == "alimentacion" OR $tipo == "pasaje" OR $tipo == "carga/descarga") {
           return "kg";
-        }elseif ($tipo == "bebedero") {
+        }elseif ($tipo == "bebedero" OR $tipo == "lavado") {
           return "ml";
-        }elseif ($tipo == "recepcion" OR $tipo == "racionamiento" OR $tipo == "convalescencia"){
+        }elseif ($tipo == "recepcion" OR $tipo == "racionamiento" OR $tipo == "convalescencia" OR $tipo == "alojamiento" OR $tipo == "corrales" OR $tipo == "medicacion"){
             return "u";
+        }elseif($tipo == "residuos" OR $tipo == "cuarentena" OR $tipo == "reproduccion" OR $tipo == "engorda"){
+            return "m2";
         }
 }
 

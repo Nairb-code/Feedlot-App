@@ -1,5 +1,6 @@
 <?php 
-include $_SERVER['DOCUMENT_ROOT'].'/includes.php';
+/*include $_SERVER['DOCUMENT_ROOT'].'/includes.php';*/
+include 'C:\xampp\htdocs\olimpiadasinet\includes.php';
 session_start();
 if(!isset($_SESSION['idUsuario'])) {
   header("location: ../../index.php");
@@ -27,16 +28,25 @@ if(!isset($_SESSION['idUsuario'])) {
 </nav></h6>
     <br><br>
     <?php 
+    /* if (isset ($_POST["nombre"]))  */
     if (isset ($_POST["nombre"])) {
+// Depurar la variable $_POST usando var_dump()
+//var_dump($_POST);
+//echo "-------------------";
+// Depurar la variable $_POST usando print_r()
+//print_r($_POST["nombre"]);
+
+
         // Asignamos las variables recibidas del GET en variables PHP para el script
-        $nombre = $_POST["nombre"]." ".$_POST["apellido"];
+        /*         $nombre = $_POST["nombre"]." ".$_POST["apellido"]; */
+        $nombre = $_POST["nombre"] . $_POST["apellido"];
         $usuario = $_POST["usuario"];
         $clave = $_POST["clave"];
 
         if ($nombre && $usuario && $clave) {
          // Comenzamos la fase de registro si todos los campos fueron completados
         // Efectuamos el registro del operador
-        if (mysqli_query($con, "INSERT INTO operador VALUES ('', '$nombre', '$usuario', '$clave')") ) {
+        if (mysqli_query($con, "INSERT INTO operador (`id`, `nombre`, `usuario`, `clave`) VALUES (NULL,'$nombre', '$usuario', '$clave')") ) {
             $msg = "<div class='alert alert-success w-50'>Registrado correctamente</div>";
         }else{
             $msg = "<div class='alert alert-danger w-50'>Se produjo un error al registrarse</div>";
@@ -48,8 +58,8 @@ if(!isset($_SESSION['idUsuario'])) {
     }
 
     ?>
-    <?php if (isset($msg)) { echo $msg; } // Muestra mensaje de error si se produce uno ?>
-    <form method=POST action="">
+    <?php if (isset($msg)) { echo "Aqui esta el error: " . $msg;} // Muestra mensaje de error si se produce uno ?>
+    <form method="POST" action="">
   <div class="form-group ml-5 mr-5">
     <label>Nombre</label>
     <input type="text" name="nombre" class="form-control w-50" placeholder="Nombre" required="" autocomplete="off">

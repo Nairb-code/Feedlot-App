@@ -31,11 +31,8 @@ if(!isset($_SESSION['idUsuario'])) {
 
 <div class="card-group resp">
   <div class="card mb-4">
-            <div class="card-header">
-   Animales
-  </div>
+    <div class="card-header">Animales</div>
     <div class="card-body">
-
       <p class="card-text"><?php 
   // Se realiza la consulta a la base de datos
 if ($resultado = mysqli_query($con,"SELECT id,tipo,peso FROM animal LIMIT 5")) {
