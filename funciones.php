@@ -30,7 +30,8 @@ function getPanelUsuario() {
 }
     
 function getHead($titulo) {
-    $root = "http://".$_SERVER['SERVER_NAME']; // Directorio root
+    /*$root = "http://".$_SERVER['SERVER_NAME']; // Directorio root*/
+    $root = "http://127.0.0.10/olimpiadasinet/"; // Directorio root
 
     ?>
     <title><?php echo "Olimpiadas - ".$titulo; ?></title>

@@ -1,5 +1,7 @@
 <?php 
-include $_SERVER['DOCUMENT_ROOT'].'/includes.php';
+/*include $_SERVER['DOCUMENT_ROOT'].'/includes.php'; */
+
+include 'C:\xampp\htdocs\olimpiadasinet\includes.php';
 session_start();
 if(!isset($_SESSION['idUsuario'])) {
   header("location: ../index.php");
