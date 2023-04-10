@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
 --
 -- Host: localhost    Database: feedlot
 -- ------------------------------------------------------
--- Server version	8.0.30
+-- Server version	8.0.32
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -24,10 +24,10 @@ DROP TABLE IF EXISTS `corral`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `corral` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `tipo` varchar(45) COLLATE utf8mb3_spanish_ci NOT NULL,
+  `tipo` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci NOT NULL,
   `capacidad` double NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_spanish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `corral` (
 
 LOCK TABLES `corral` WRITE;
 /*!40000 ALTER TABLE `corral` DISABLE KEYS */;
-INSERT INTO `corral` VALUES (1,'Recepción',29),(2,'Convalescencia',21),(3,'Engorda o Fase de Crecimiento',37),(4,'Racionamiento',15),(5,'Cuarentena',23),(6,'Tratamiento de enfermos',19);
+INSERT INTO `corral` VALUES (1,'recepcion',320),(2,'cuarentena',21),(3,'engorda',37),(4,'Racionamiento',15),(5,'reproduccion',23),(6,'Tratamiento de enfermos',19),(7,'Convalescencia',155);
 /*!40000 ALTER TABLE `corral` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-09 13:41:37
+-- Dump completed on 2023-04-10  0:24:17
