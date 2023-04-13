@@ -89,6 +89,9 @@ function mostrarSeleccionado(){
      <select name="tipo" id="tipo" class="form-control w-50" onchange="mostrarSeleccionado()">
       <option value="Alimentacion">Alimentacion</option>
       <option value="Bebedero">Bebedero</option>
+      <option value="Carga de ganado">Carga de ganado</option>
+      <option value="Enfermeria">Enfermeria</option>
+      <option value="Residuos">Residuos</option>
     </select>
   </div>
   <div class="form-group ml-5 mr-5">
@@ -98,9 +101,9 @@ function mostrarSeleccionado(){
 
   <div class="col-auto w-50">
       <div class="input-group mb-2">
-        <input type="number" name="capacidad" id="capacidad" class="form-control w-50" maxlength="30" placeholder="Expresado en kg" required="" autocomplete="off"> 
+        <input type="number" name="capacidad" id="capacidad" class="form-control w-50" maxlength="30" placeholder="Expresado en unidades" required="" autocomplete="off"> 
           <div class="input-group-prepend">
-          <div class="input-group-text" id="medida">kg</div>
+          <div class="input-group-text" id="medida">u</div>
         </div>
       </div>
     </div>

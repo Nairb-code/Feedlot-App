@@ -67,7 +67,7 @@ function obtenerMedida ($tipo) { // Output: unidad de medida fisica segun el tip
           return "kg";
         }elseif ($tipo == "bebedero" OR $tipo == "lavado") {
           return "ml";
-        }elseif ($tipo == "recepcion" OR $tipo == "racionamiento" OR $tipo == "convalescencia" OR $tipo == "alojamiento" OR $tipo == "corrales" OR $tipo == "medicacion"){
+        }elseif ($tipo == "recepcion" OR $tipo == "racionamiento" OR $tipo == "convalescencia" OR $tipo == "carga de ganado" OR $tipo == "corrales" OR $tipo == "enfermeria"){
             return "u";
         }elseif($tipo == "residuos" OR $tipo == "cuarentena" OR $tipo == "reproduccion" OR $tipo == "engorda" OR $tipo == "tratamiento de enfermos"){
             return "m2";

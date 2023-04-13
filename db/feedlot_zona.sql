@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `zona`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `zona` (
-  `id` int NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
   `tipo` varchar(45) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci NOT NULL,
   `capacidad` double NOT NULL,
   PRIMARY KEY (`id`)

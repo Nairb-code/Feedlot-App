@@ -39,7 +39,7 @@ if(!isset($_SESSION['idUsuario'])) {
 
         // Asignamos las variables recibidas del GET en variables PHP para el script
         /*         $nombre = $_POST["nombre"]." ".$_POST["apellido"]; */
-        $nombre = $_POST["nombre"] . $_POST["apellido"];
+        $nombre = $_POST["nombre"] . ' ' . $_POST["apellido"];
         $usuario = $_POST["usuario"];
         $clave = $_POST["clave"];
 

@@ -72,9 +72,13 @@ if(!isset($_SESSION['idUsuario'])) {
   <div class="form-group mt-2 ml-5 mr-5">
     <label>Modificar tipo de corral</label>
      <select name="tipo" class="form-control w-50">
-      <option value="Recepcion">Recepcion</option>
+     <option value="Recepcion">Recepcion</option>
       <option value="Racionamiento">Racionamiento</option>
       <option value="Convalescencia">Convalescencia</option>
+      <option value="Engorda">Engorda</option>
+      <option value="Apareamiento">Apareamiento</option>
+      <option value="Maternidad">Maternidad</option>
+      <option value="Alimentacion">Alimentacion</option>
     </select>
   </div>
   <div class="form-group ml-5 mr-5">
