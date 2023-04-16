@@ -151,13 +151,14 @@ if ($resultado = mysqli_query($con,"SELECT id,tipo,capacidad FROM corral LIMIT 5
 
     // Ejecutamos un while que recorra el vector obtenido por la query almacenada en la variable $resultado
 $fila = mysqli_fetch_array($resultado);
-$medida = obtenerMedida($fila["tipo"]);
+/*$medida = obtenerMedida($fila["tipo"]);*/
 
     if ($fila == null) {
             echo "</table>
          Sin datos";
     }else{
     do { 
+      $medida = obtenerMedida($fila["tipo"]);
         echo "<tr>
          <td align=center>".$fila["id"]."</td>
         <td align=center>".$fila["tipo"]."</td>

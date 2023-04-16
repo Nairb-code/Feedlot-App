@@ -52,9 +52,9 @@ function mostrarSeleccionado($elementId1,$elementId2){
         // Comprobamos que $peso tengan valores numericos validos
         if (is_numeric($peso)) {
             // Y si $peso son numeros y enteros
-            if ($peso >= 0 && $peso <= 500) {
+            if ($peso >= 0 && $peso <= 800) {
         // Efectuamos el registro del participante
-        if (mysqli_query($con, "INSERT INTO `animal` (`id`, `peso`, `tipo`, `fechaVacunacion`) VALUES (NULL, $peso, '$tipo', '$fechaVacunacion')") ) {
+        if (mysqli_query($con, "INSERT INTO animal (`id`, `tipo`, `peso`, `fechaVacunacion`) VALUES (NULL,'$tipo', '$peso', '$fechaVacunacion')") ) {
             $msg = "<div class='alert alert-success w-50'>Registrado correctamente</div>";
         }else{
             $msg = "<div class='alert alert-danger w-50'>Se produjo un error al registrar</div>";
@@ -79,7 +79,11 @@ function mostrarSeleccionado($elementId1,$elementId2){
     <select name="tipo" id="tipo" class="form-control w-50">
       <option value="Vaca">Vaca</option>
       <option value="Ternera">Ternera</option>
-      <option value="Ternera">Caballo</option> 
+      <option value="Toro">Toro</option>
+      <option value="Vaquillonas">Vaquillonas</option>
+      <option value="Becerros">Becerros</option>
+      <option value="Bueyes">Bueyes</option>
+      <option value="Chancho">Chancho</option>
     </select>
   </div>
   <div class="form-group ml-5 mr-5">

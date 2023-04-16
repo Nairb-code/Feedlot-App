@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
 -- Host: localhost    Database: feedlot
 -- ------------------------------------------------------
--- Server version	8.0.32
+-- Server version	8.0.30
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -28,7 +28,7 @@ CREATE TABLE `operador` (
   `usuario` varchar(255) DEFAULT NULL,
   `clave` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `operador` (
 
 LOCK TABLES `operador` WRITE;
 /*!40000 ALTER TABLE `operador` DISABLE KEYS */;
-INSERT INTO `operador` VALUES (1,'Brian Duran','brian','123'),(2,'Bruno Caruso','Bruno','123'),(3,'Franco Sancristobal','franco','123'),(4,'Gonzalo Benavente','gonzalo','123'),(5,'Almafuerte Otto Krase','admin','admin'),(6,'Malcolm Young','malcolm','123'),(7,'Angus Young','angus','123'),(8,'Sofia Danibal','sof','123'),(9,'Jonathan Arteaga','jona','123');
+INSERT INTO `operador` VALUES (1,'Brian Duran','brian','123'),(2,'Bruno Caruso','bruno','123'),(3,'Franco Sancristobal','franco','123'),(4,'Gonzalo Benavente','gonzalo','123'),(5,'Almafuerte Ottokrause','admin','admin'),(6,'Malcolm Young','malcolm','123'),(7,'Angus Young','angus','123'),(8,'Sofia Danibal','sof','123'),(9,'Jonathan Arteaga','jona','123'),(10,'Melanie Zubemendi','mel','123'),(11,'Karen Gomez','kar','123'),(12,'Mercurio GP','mercurio','123');
 /*!40000 ALTER TABLE `operador` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-10  0:24:17
+-- Dump completed on 2023-04-15 21:59:58

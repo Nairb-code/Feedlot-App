@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
 -- Host: localhost    Database: feedlot
 -- ------------------------------------------------------
--- Server version	8.0.32
+-- Server version	8.0.30
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -28,7 +28,7 @@ CREATE TABLE `animal` (
   `peso` int NOT NULL,
   `fechaVacunacion` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_spanish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `animal` (
 
 LOCK TABLES `animal` WRITE;
 /*!40000 ALTER TABLE `animal` DISABLE KEYS */;
-INSERT INTO `animal` VALUES (1,'Vaca',220,'2018-01-10'),(2,'Vaca',287,'2017-10-23'),(3,'Ternera',186,'2017-05-17'),(4,'Vaquillonas',204,'0000-00-00'),(5,'Toros',115,'0000-00-00'),(6,'Becerros',202,'0000-00-00'),(7,'Bueyes',90,'0000-00-00'),(8,'Chancho',23,'2018-06-12');
+INSERT INTO `animal` VALUES (1,'Vaca',220,'2018-01-10'),(2,'Becerros',120,'2023-04-14'),(3,'Ternera',186,'2017-05-17'),(4,'Vaquillonas',120,'2023-04-04'),(5,'Toro',750,'2018-06-14'),(6,'Becerros',230,'2018-09-16'),(7,'Bueyes',780,'2019-05-06'),(8,'Toro',790,'2020-05-06'),(9,'Vaquillonas',120,'2021-05-09'),(10,'Vaquillonas',130,'2018-11-06'),(11,'Chancho',220,'2019-12-17');
 /*!40000 ALTER TABLE `animal` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-10  0:24:17
+-- Dump completed on 2023-04-15 21:59:58

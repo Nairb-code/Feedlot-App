@@ -38,7 +38,7 @@ if(!isset($_SESSION['idUsuario'])) {
         if ($tipo && $peso && $fechaVacunacion && is_numeric($peso)) {
          // Comenzamos la modificacion si los valores estan completos y si son validos
         // Efectuamos el update hacia la db para modificar
-        if($peso >= 0 && $peso <=500){
+        if($peso >= 0 && $peso <=800){
         if (mysqli_query($con, "UPDATE `animal` SET `peso` = '$peso', `tipo` = '$tipo', `fechaVacunacion` = '$fechaVacunacion' WHERE `animal`.`id` = $id") ) {
             $msg = "<div class='alert alert-success w-50'>Modificado correctamente</div>";
         }else{
@@ -75,7 +75,11 @@ if(!isset($_SESSION['idUsuario'])) {
        <select name="tipo" id="tipo" class="form-control w-50">
       <option value="Vaca">Vaca</option>
       <option value="Ternera">Ternera</option>
-      <option value="Ternera">Caballo</option> 
+      <option value="Toro">Toro</option>
+      <option value="Vaquillonas">Vaquillonas</option>
+      <option value="Becerros">Becerros</option>
+      <option value="Bueyes">Bueyes</option>
+      <option value="Chancho">Chancho</option>
     </select>
   </div>
 

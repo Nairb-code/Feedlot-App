@@ -52,7 +52,7 @@ function mostrarSeleccionado(){
         if ($tipo && is_numeric($capacidad)) {
          // Comenzamos la modificacion si los valores estan completos y si son validos
         // Efectuamos el update hacia la db para modificar
-        if($capacidad >= 0 && $capacidad <=500){
+        if($capacidad >= 0 && $capacidad <=800){
         if (mysqli_query($con, "UPDATE `zona` SET `capacidad` = '$capacidad', `tipo` = '$tipo' WHERE `zona`.`id` = $id") ) {
             $msg = "<div class='alert alert-success w-50'>Modificada correctamente</div>";
         }else{
