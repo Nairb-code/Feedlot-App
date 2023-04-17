@@ -52,10 +52,11 @@ function getHead($titulo) {
 
 function getPiePagina() {
     ?>
-    <div class="footer p-3" align=center>
+    <div class="footer p-3" align="center">
 <small class="text-muted">EEST N°8 Almafuerte - ET N°1 Otto Krause<br>Bruno Caruso - Franco Sancristobal - Brian Duran - Gonzalo Benavente
-</small></div>
-
+</small>
+</div>
+<button type="button" class="btn btn-outline-primary" style="font-size:15px;" onclick="location.href='about us.php'">Sobre Nosotros</button>
 <?php
 }
 
