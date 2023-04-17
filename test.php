@@ -39,7 +39,47 @@ if (isset($_POST["nombre"])) {
   <title>Document</title>
 </head>
 <body>
-<body>
+<h1 align="center">About Us</h1>
+
+<br>
+<br>
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/img_carusel_1.png" class="d-block w-100 d-md-none img-fluid" alt="...">
+      <img src="img/img_carusel_1.png" class="d-none d-md-block mx-auto w-100 h-100 img-fluid" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img_carrusel_2.jpg" class="d-block w-100 h-auto d-md-none img-fluid" alt="...">
+      <img src="img/img_carrusel_2.jpg" class="d-none d-md-block mx-auto h-100 img-fluid" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img_carrusel_3.jpg" class="d-block w-100 d-md-none img-fluid" alt="...">
+      <img src="img/img_carrusel_3.jpg" class="d-none d-md-block mx-auto h-100 img-fluid" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img_carrusel_4.jpg" class="d-block w-100 d-md-none img-fluid" alt="...">
+      <img src="img/img_carrusel_4.jpg" class="d-none d-md-block mx-auto h-100 img-fluid" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
 
 <!--
 <div class="card" style="width: 18rem;">
@@ -79,7 +119,7 @@ if (isset($_POST["nombre"])) {
     }
   </script>
   -->
-  <body>
+
   <div class="container">
   <div class="row align-items-stretch">
     <div class="col-md-4">
@@ -144,5 +184,4 @@ if (isset($_POST["nombre"])) {
   </script>
 </body>
 
-</body>
 </html>
