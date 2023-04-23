@@ -7,140 +7,565 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <!-- Enlace al archivo CSS de Bootstrap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand">FeedlotApp</a>
-            <form class="d-flex" role="search">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Estadísticas Arduino</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre Nosotros</a>
-                        </li>
-                    </ul>
+    <header class="container mg-b-20">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand icon-feedlotApp text-reset">FeedlotApp</a>
+                <form class="d-flex">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active text-reset" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-reset" href="#">Estadisticas Arduino</a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-outline-primary text-reset btn-header">
+                                    Cerrar Sesion
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-primary text-reset btn-header">
+                                    Iniciar Sesion
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <!-- Encabezado del sitio web   -->
+        <!-- Importación de Carousel Slides -->
+        <section class="seccion-carrusel carrusel-mobile">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide bg-dark">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <button class="btn btn-outline-primary" type="submit">
-                    Cerrar Sesion
+                <div class="carousel-inner carrusel-mobile">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/img-carrusel/carrusel_1.png" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/img-carrusel/carrusel_2.png" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/img-carrusel/carrusel_3.png" class="d-block w-100" alt="..." />
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-            </form>
-        </div>
-    </nav>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </header>
 
-    <!-- Importación de Carousel Slides -->
-    <section class="seccion-carrusel">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide bg-dark">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="img/carrusel_1.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="img/carrusel_2.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/carrusel_3.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-    <section class="containter text-center mt-xxl-5">
-        <h2>Tecnologías utilizadas</h2>
-        <span class="badge bg-secondary">PHP</span></h3>
-        <span class="badge bg-secondary">MySQL Worckbench</span></h3>
-        <span class="badge bg-secondary">Bootstrap</span></h3>
-        <span class="badge bg-secondary">HTML</span></h3>
-        <span class="badge bg-secondary">CSS</span></h3>
-        <span class="badge bg-secondary">GIT</span></h3>
-        <span class="badge bg-secondary">GITHUB</span></h3>
-        <span class="badge bg-secondary">APACHE</span></h3>
-    </section>
-    <main>
-        <h2 class="text-center mt-xxl-5">Sobre Nosotros</h2>
-        <div class="container">
-            <div class="container text-center">
-                <div class="row align-items-start">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <main class="container mg-b-60">
+        <h2 class="text-center mg-top-30 mg-top-50">Sobre Nosotros</h2>
+        <p class="sub-title">Enthusiastic technologists.</p>
+        <p class="text-about_us">
+            Un grupo de jóvenes apasionados por la tecnología participó en las
+            olimpiadas de programación organizadas por el INET y el Gobierno de la
+            Ciudad. Desafiados por una situación problemática relacionada con la
+            administración y gestión de un Feedlot de ganado, pusieron a prueba sus
+            habilidades y trabajaron juntos para encontrar una solución innovadora.
+            A pesar de ser de diferentes colegios, supieron colaborar en equipo y
+            presentar una solución útil y eficaz que fue destacada por los
+            evaluadores de la competencia. Este logro demostró su capacidad de
+            enfrentar desafíos y su potencial como futuros líderes en el campo de la
+            tecnología.
+        </p>
+        <p class="slogan text-center">
+            ¡Nada es imposible cuando se tiene pasión, determinación y trabajo en
+            equipo!
+        </p>
     </main>
-    <footer class="mt-xxl-5">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis earum laborum necessitatibus dolorum libero
-            cum perspiciatis ipsa, voluptatem iure deleniti illo perferendis repellat numquam quisquam fugit totam
-            repudiandae veritatis temporibus.</p>
+    <section class="container mg-b-60">
+        <h2 class="text-center mg-b-40">Tecnologías Implementadas</h2>
+        <div class="container text-center carrusel-desktop-technology">
+            <div class="row">
+                <div class="col">
+                    <img src="img/img-technologys/icon-github.png" class="d-block w-auto h-75" alt="..." />
+                </div>
+                <div class="col">
+                    <img src="img/img-technologys/icon-git.png" class="d-block w-auto h-75" alt="..." />
+                </div>
+                <div class="col">
+                    <img src="img/img-technologys/icon-vscode.png" class="d-block w-auto h-75" alt="..." />
+                </div>
+                <div class="col">
+                    <img src="img/img-technologys/icon-html.png" class="d-block w-auto h-75" alt="..." />
+                </div>
+                <div class="col">
+                    <img src="img/img-technologys/icon-js.png" class="d-block w-auto h-75" alt="..." />
+                </div>
+                <div class="col">
+                    <img src="img/img-technologys/icon-figma.png" class="d-block w-auto h-75" alt="..." />
+                </div>
+                <div class="col">
+                    <img src="img/img-technologys/icon-css.png" class="d-block w-auto h-75" alt="..." />
+                </div>
+                <div class="col">
+                    <img src="img/img-technologys/icon-mysql.png" class="d-block w-auto h-75" alt="..." />
+                </div>
+                <div class="col">
+                    <img src="img/img-technologys/icon-php.png" class="d-block w-auto h-75" alt="..." />
+                </div>
+                <div class="col">
+                    <img src="img/img-technologys/icon-sql.png" class="d-block w-auto h-75" alt="..." />
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="container mg-b-60 text-center carrusel-mobile-technology">
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 1"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/img-technologys/icon-github.png" class="d-block w-auto h-75" alt="..." /> 
+            <div class="carousel-caption d-none d-md-block">
+              <h5>GitHub</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-technologys/icon-git.png" class="d-block w-auto h-75" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Git</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-technologys/icon-vscode.png" class="d-block w-auto h-75" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Visual Studio Code</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-technologys/icon-html.png" class="d-block w-auto h-75" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>HTML</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-technologys/icon-js.png" class="d-block w-auto h-75" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>JavaScript</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-technologys/icon-figma.png" class="d-block w-auto h-75" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Figma</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-technologys/icon-css.png" class="d-block w-auto h-75" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>CSS</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-technologys/icon-mysql.png" class="d-block w-auto h-75" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mysql Workbench</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-technologys/icon-php.png" class="d-block w-auto h-75" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>PHP</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img-technologys/icon-sql.png" class="d-block w-auto h-75" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>SQL</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+</section>
+
+    <section class="container">
+        <h2 class="text-center mg-b-40">The Enthusiastic Technologists</h2>
+        <div class="row lista-perfiles">
+            <div class="col section-col3">
+                <div class="card" style="width: 18rem">
+                    <div class="portada portada-brian">
+                        <img src="img/img-perfiles/perfil-brian/perfil-brian.png" class="card-img-top"
+                            alt="Brian Duran" />
+                    </div>
+                    <div class="card-body text-white">
+                        <div class="card-perfil">
+                            <h5 class="card-title text-center">Brian Duran</h5>
+                            <h6 class="card-subtitle mb-2 text-rol text-center">
+                                AI Engineer Analyst
+                            </h6>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                As an RPA Developer with more than 2 years of experience in
+                                the Blue Prism platform, I have participated in banking,
+                                finance and administration projects. My skills in front and
+                                backend, as well as Excel, Power Bi and Power Apps have
+                                complemented my knowledge in RPA, which has allowed me to
+                                design efficient solutions for clients. While I am focused on
+                                RPA, I am also interested in full stack development and
+                                looking to expand my skills in the field. I am looking to face
+                                new challenges and add value to the projects in which I
+                                participate.
+                            </p>
+                            <a href="#" class="ver-mas text-white" data-mas="Ver más" data-menos="Ver menos">Ver más</a>
+                            <a href="#" class="ver-menos text-white" data-mas="Ver más" data-menos="Ver menos"
+                                style="display: none">Ver menos</a>
+                            <a href="#" class="ver-todo text-white" style="display: none">Ver todo</a>
+
+                        </div>
+                        <div class="d-grid gap-2 mx-auto card-btn-verPerfil">
+                            <a href="#" class="btn btn-primary">Ver Perfil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem">
+                    <div class="portada portada-franco">
+                        <img src="img/img-perfiles/perfil-franco/perfil-franco.png" class="card-img-top"
+                            alt="Franco Sancristobal" />
+                    </div>
+                    <div class="card-body text-white">
+                        <div class="card-perfil">
+                            <h5 class="card-title text-reset text-center">
+                                Franco Sancristobal
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-rol text-center">
+                                Software Developer
+                            </h6>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                Some quick example text to build on the card title and make up
+                                the bulk of the card's content.Lorem impsun dfrunwefas Some quick example text to build
+                                on the card title and make up
+                                the bulk of the card's content.Lorem impsun dfrunwefas Some quick example text to build
+                                on the card title and make up
+                                the bulk of the card's content.Lorem impsun dfrunwefas.
+                            </p>
+                            <a href="#" class="ver-mas text-white" data-mas="Ver más" data-menos="Ver menos">Ver más</a>
+                            <a href="#" class="ver-menos text-white" data-mas="Ver más" data-menos="Ver menos"
+                                style="display: none">Ver menos</a>
+                            <a href="#" class="ver-todo text-white" style="display: none">Ver todo</a>
+                        </div>
+                        <div class="d-grid gap-2 mx-auto">
+                            <a href="#" class="btn btn-primary card-btn-verPerfil">Ver Perfil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem">
+                    <div class="portada portada-bruno">
+                        <img src="img/img-perfiles/perfil-bruno/perfil-bruno.png" class="card-img-top"
+                            alt="Bruno Caruso" />
+                    </div>
+                    <div class="card-body text-white">
+                        <div class="card-perfil">
+                            <h5 class="card-title text-center">Bruno Caruso</h5>
+                            <h6 class="card-subtitle mb-2 text-rol text-center">
+                                Software Developer
+                            </h6>
+                        </div>
+                        <div class="card-text">
+                        <p>
+                            Passionate Full Stack Developer & technology enthusiast. I have a high
+                            proficiency in JavaScript and a user-centered mentality for building products.
+                            I also like finances, fitness, hackintoshing and entrepreneurial spirit.
+                            Self-taught by nature and constantly learning.
+                        </p>
+                        <a href="#" class="ver-mas text-white" data-mas="Ver más" data-menos="Ver menos">Ver más</a>
+                        <a href="#" class="ver-menos text-white" data-mas="Ver más" data-menos="Ver menos"
+                            style="display: none">Ver menos</a>
+                        <a href="#" class="ver-todo text-white" style="display: none">Ver todo</a>
+                    </div>
+                        <div class="d-grid gap-2 mx-auto">
+                            <a href="#" class="btn btn-primary card-btn-verPerfil">Ver Perfil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem">
+                    <div class="portada portada-gonzalo">
+                        <img src="img/img-perfiles/perfil-gonzalo/perfil-gonzalo.png" class="card-img-top"
+                            alt="Bruno Caruso" />
+                    </div>
+                    <div class="card-body text-white">
+                        <div class="card-perfil">
+                            <h5 class="card-title text-center">Gonzalo Benavente</h5>
+                            <h6 class="card-subtitle mb-2 text-rol text-center">
+                                Software Developer
+                            </h6>
+                        </div>
+                        <div class="card-text">
+                        <p>
+                            Some quick example text to build on the card title and make up
+                            the bulk of the card's content.Some quick example text to build on the card title and make up
+                            the bulk of the card's content.Some quick example text to build on the card title and make up
+                            the bulk of the card's content.Some quick example text to build on the card title and make up
+                            the bulk of the card's content.Some quick example text to build on the card title and make up
+                            the bulk of the card's content.Some quick example text to build on the card title and make up
+                            the bulk of the card's content.Some quick example text to build on the card title and make up
+                            the bulk of the card's content.Some quick example text to build on the card title and make up
+                            the bulk of the card's content.Some quick example text to build on the card title and make up
+                            the bulk of the card's content.Some quick example text to build on the card title and make up
+                            the bulk of the card's content.
+                        </p>
+                        <a href="#" class="ver-mas text-white" data-mas="Ver más" data-menos="Ver menos">Ver más</a>
+                        <a href="#" class="ver-menos text-white" data-mas="Ver más" data-menos="Ver menos"
+                            style="display: none">Ver menos</a>
+                        <a href="#" class="ver-todo text-white" style="display: none">Ver todo</a>
+                    </div>
+                        <div class="d-grid gap-2 mx-auto">
+                            <a href="#" class="btn btn-primary card-btn-verPerfil">Ver Perfil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container carrusel-perfiles">
+        <div id="carouselExampleIndicators" class="carousel slide lista-carrusel-perfiles">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner section-absolute">
+              <div class="carousel-item active card-perfil-scroll">
+                <div class="card">
+                    <div class="portada portada-brian">
+                        <img src="img/img-perfiles/perfil-brian/perfil-brian.png" class="card-img-top"
+                            alt="Brian Duran" />
+                    </div>
+                    <div class="card-body text-white">
+                        <div class="card-perfil">
+                            <h5 class="card-title text-center">Brian Duran</h5>
+                            <h6 class="card-subtitle mb-2 text-rol text-center">
+                                AI Engineer Analyst
+                            </h6>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                As an RPA Developer with more than 2 years of experience in
+                                the Blue Prism platform, I have participated in banking,
+                                finance and administration projects. My skills in front and
+                                backend, as well as Excel, Power Bi and Power Apps have
+                                complemented my knowledge in RPA, which has allowed me to
+                                design efficient solutions for clients. While I am focused on
+                                RPA, I am also interested in full stack development and
+                                looking to expand my skills in the field. I am looking to face
+                                new challenges and add value to the projects in which I
+                                participate.
+                            </p>
+                            <a href="#" class="ver-mas text-white" data-mas="Ver más" data-menos="Ver menos">Ver más</a>
+                            <a href="#" class="ver-menos text-white" data-mas="Ver más" data-menos="Ver menos"
+                                style="display: none">Ver menos</a>
+                            <a href="#" class="ver-todo text-white" style="display: none">Ver todo</a>
+
+                        </div>
+                        <div class="d-grid gap-2 mx-auto card-btn-verPerfil">
+                            <a href="#" class="btn btn-primary">Ver Perfil</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                    <div class="portada portada-franco">
+                        <img src="img/img-perfiles/perfil-franco/perfil-franco.png" class="card-img-top"
+                            alt="Franco Sancristobal" />
+                    </div>
+                    <div class="card-body text-white">
+                        <div class="card-perfil">
+                            <h5 class="card-title text-reset text-center">
+                                Franco Sancristobal
+                            </h5>
+                            <h6 class="card-subtitle mb-2 text-rol text-center">
+                                Software Developer
+                            </h6>
+                        </div>
+                        <div class="card-text">
+                            <p>
+                                Some quick example text to build on the card title and make up
+                                the bulk of the card's content.Lorem impsun dfrunwefas Some quick example text to build
+                                on the card title and make up
+                                the bulk of the card's content.Lorem impsun dfrunwefas Some quick example text to build
+                                on the card title and make up
+                                the bulk of the card's content.Lorem impsun dfrunwefas.
+                            </p>
+                            <a href="#" class="ver-mas text-white" data-mas="Ver más" data-menos="Ver menos">Ver más</a>
+                            <a href="#" class="ver-menos text-white" data-mas="Ver más" data-menos="Ver menos"
+                                style="display: none">Ver menos</a>
+                            <a href="#" class="ver-todo text-white" style="display: none">Ver todo</a>
+                        </div>
+                        <div class="d-grid gap-2 mx-auto">
+                            <a href="#" class="btn btn-primary card-btn-verPerfil">Ver Perfil</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                    <div class="portada portada-bruno">
+                        <img src="img/img-perfiles/perfil-bruno/perfil-bruno.png" class="card-img-top"
+                            alt="Bruno Caruso" />
+                    </div>
+                    <div class="card-body text-white">
+                        <div class="card-perfil">
+                            <h5 class="card-title text-center">Bruno Caruso</h5>
+                            <h6 class="card-subtitle mb-2 text-rol text-center">
+                                Software Developer
+                            </h6>
+                        </div>
+                        <div class="card-text">
+                        <p>
+                            Passionate Full Stack Developer & technology enthusiast. I have a high
+                            proficiency in JavaScript and a user-centered mentality for building products.
+                            I also like finances, fitness, hackintoshing and entrepreneurial spirit.
+                            Self-taught by nature and constantly learning.
+                        </p>
+                        <a href="#" class="ver-mas text-white" data-mas="Ver más" data-menos="Ver menos">Ver más</a>
+                        <a href="#" class="ver-menos text-white" data-mas="Ver más" data-menos="Ver menos"
+                            style="display: none">Ver menos</a>
+                        <a href="#" class="ver-todo text-white" style="display: none">Ver todo</a>
+                    </div>
+                        <div class="d-grid gap-2 mx-auto">
+                            <a href="#" class="btn btn-primary card-btn-verPerfil">Ver Perfil</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                    <div class="portada portada-gonzalo">
+                        <img src="img/img-perfiles/perfil-gonzalo/perfil-gonzalo.png" class="card-img-top"
+                            alt="Gonzalo Benavente" />
+                    </div>
+                    <div class="card-body text-white">
+                        <div class="card-perfil">
+                            <h5 class="card-title text-center">Gonzalo Benavente</h5>
+                            <h6 class="card-subtitle mb-2 text-rol text-center">
+                                Software Developer
+                            </h6>
+                        </div>
+                        <div class="card-text">
+                        <p>
+                            Passionate Full Stack Developer & technology enthusiast. I have a high
+                            proficiency in JavaScript and a user-centered mentality for building products.
+                            I also like finances, fitness, hackintoshing and entrepreneurial spirit.
+                            Self-taught by nature and constantly learning.
+                        </p>
+                        <a href="#" class="ver-mas text-white" data-mas="Ver más" data-menos="Ver menos">Ver más</a>
+                        <a href="#" class="ver-menos text-white" data-mas="Ver más" data-menos="Ver menos"
+                            style="display: none">Ver menos</a>
+                        <a href="#" class="ver-todo text-white" style="display: none">Ver todo</a>
+                    </div>
+                        <div class="d-grid gap-2 mx-auto">
+                            <a href="#" class="btn btn-primary card-btn-verPerfil">Ver Perfil</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <footer class="m-5">
+        <hr />
+        <div class="footer p-3" align="center">
+            <small class="text-reset">
+                <div class="row footer-mobile">
+                    <div class="col">
+                        <img src="img/img-institutos/icon-inet.png" class="by" alt="Instituto Nacional de Educación Tecnologíca">
+                        
+                    </div>
+                    <div class="col">
+                        <div class="seccion-escuelas">
+                            <img src="img/img-institutos/icon-EEST.png" alt="Escuela Tecnica Almafuerte" class="icono-escuelas">
+                            <p>EEST N°8 Almafuerte - ET N°1 Otto Krause</p>
+                            <img src="img/img-institutos/icon-ottokrause.png" alt="Escuela Técnica Otto Krause" class="icono-escuelas">
+                    </div>
+                    <br/>
+                    <p>Bruno Caruso - Franco Sancristobal - Brian Duran - Gonzalo Benavente</p> 
+                    </div>
+                    <div class="col">
+                        <img src="img/img-institutos/icono-caba.png"  class="by" alt="Ciudad Autónoma de Buenos Aires">
+                        <img src="img/img-institutos/icon-gobAr.png" class="by" alt="Gobierno">
+                    </div>
+                </div>
+                
+            </small>
+        </div>
     </footer>
     <!-- Importación de archivos JavaScript de Bootstrap -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Importación del archivo JavaScript ver-mas.js -->
+    <script src="./js/ver-mas.js"></script>
 </body>
 
 </html>

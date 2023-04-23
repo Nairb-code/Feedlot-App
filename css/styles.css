@@ -1,4 +1,217 @@
+:root{
+  --portada-brian: url(../img/img-perfiles/perfil-brian/portada-brian.png);
+  --portada-franco: url(../img/img-perfiles/perfil-franco/portada-franco.png);
+  --portada-bruno: url(../img/img-perfiles/perfil-bruno/portada-bruno.png);
+  --portada-gonzalo: url(../img/img-perfiles/perfil-gonzalo/portada-gonzalo.png);
+}
 .seccion-carrusel {
-    width: 70vh;
+    width: 80vh;
     margin: 0 auto;
+}
+body{
+  background-color: #5D6D7E;
+  color: white!important;
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+}
+.icon-feedlotApp{
+  font-weight: bolder;
+}
+.navbar-nav li{
+  margin-right: 20px;
+}
+.navbar-nav li:last-of-type{
+  margin-right: 0px;
+}
+.mg-b-20{
+  margin-bottom: 20px;
+}
+.mg-b-40{
+  margin-bottom: 40px;
+}
+.mg-b-60{
+  margin-bottom: 60px;
+}
+.mg-top-30{
+  margin-top: 30px;
+}
+h2{
+  font-weight: 300;
+}
+.sub-title{
+  color:rgb(111, 189, 192);
+  font-weight: bold;
+  font-size: 19px;
+}
+.text-about_us{
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+.carrusel-mobile-technology{
+  display: none;
+}
+.slogan{
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+.card {
+  /*
+  background: rgba(217, 217, 217, 0.19);
+  border: 0.44px solid #2E4053;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;*/
+  background: rgba(217, 217, 217, 0.19);
+  border: 0.44px solid #585656;
+  box-shadow: 4px 8px 8px rgba(39, 38, 38, 0.25);
+  border-radius: 8px;
+  height: 500px;
+  width: 18rem; /* agregado desde css. Quitar desde el html*/
+}
+.portada {
+  height: 74px;
+  width: 100%;
+  position: absolute;
+}
+.portada.portada-brian{
+  background: var(--portada-brian);
+}
+.portada.portada-franco{
+  background: var(--portada-franco);
+}
+.portada.portada-bruno{
+  background: var(--portada-bruno);
+}
+.portada.portada.portada-gonzalo{
+  background: var(--portada-gonzalo);
+}
+.portada img {
+  width: 137px;
+  height: 137px;
+  left: calc(137px/2);
+  top: 0px;
+  position: relative;
+}
+.card-perfil{
+  position: relative;
+  top: calc(137px + 5px);
+}
+.card-text{
+  position: relative;
+  top: calc(137px + 10px);
+  height: 200px;
+}
+
+.card-btn-verPerfil{
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+}
+.text-rol{
+  font-weight: lighter;
+  letter-spacing: 0.8px;
+  font-style: italic;
+}
+.seccion-escuelas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seccion-escuelas p{
+  margin-bottom: 0px;
+}
+.seccion-escuelas img{
+  margin: 0 10px;
+  width: auto;
+  height: 30px;
+}
+.by{
+  width: auto;
+  height: 40px;
+}
+.carrusel-perfiles{
+  display: none;
+}
+/*  Media Querys min-width 992px*/
+@media screen and (max-width: 992px) { 
+  body{
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 5px;;
   }
+  ul li .btn-header{
+    display: block;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .section-col4{
+    margin-bottom: 30px;
+  }
+  .lista-perfiles{
+    display: none;
+  }
+  .carrusel-perfiles{
+    display: block;
+  }
+  
+  .lista-carrusel-perfiles{
+    display: relative;
+    text-align: center;
+  }
+  .card{
+    width: 100%;
+  }
+  .card-perfil-scroll{
+    display: relative;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .portada img{
+    position: initial;
+  }
+  .carousel-indicators{
+    bottom: -50px;
+  }
+  .mg-top-50{
+    margin-top: 50px;
+  }
+  /*
+  .footer-mobile{
+    display: flex;
+    justify-content:center;
+    flex-direction: column-reverse;
+    align-items: center;
+  }*/
+  .carrusel-desktop-technology{
+    display: none;
+  }
+  .carrusel-mobile-technology{
+    display: block;
+  }
+  .footer-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col:nth-child(2) {
+    order: -1;
+}
+}
+
+
+/*  Media Querys min-width: 798px */
+@media screen and (max-width: 798px) { 
+main {
+  text-align: center;
+}
+.carrusel-mobile{
+  max-width: 320px;
+  margin: 0 auto;
+  height: auto;
+}
+
+}
