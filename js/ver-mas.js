@@ -1,4 +1,4 @@
-var maxLength = 150; // número máximo de palabras
+var maxLength = 200; // número máximo de palabras
 
 document.querySelectorAll('.ver-mas').forEach(function (elemento) {
   var textoCompleto = elemento.previousElementSibling.innerHTML.trim();
