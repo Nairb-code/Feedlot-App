@@ -5,6 +5,9 @@
   --portada-gonzalo: url(../img/img-perfiles/perfil-gonzalo/portada-gonzalo.png);
 }
 
+.icon-bootstrap{
+  filter: grayscale(100%);
+}
 /*  GLOABLES  */
 .mg-b-20{
   margin-bottom: 20px;
@@ -361,7 +364,7 @@ footer p {
 
 
 
-@media (max-width: 1050px){
+@media (max-width: 10500px){
   body{
     max-width: 100%;
     margin: 0 auto;
@@ -655,16 +658,7 @@ footer p {
 }
 
 
-
-
-
-
-
-/* Fanlan realizar los media querys superiores a 720px. Lo que esta de la linea ,530, 29,528,527 ... para adelante son media querys realizados pero faltan probarlos.*/
-
-
-
-@media (max-width: 720px){
+@media (max-width: 768px){
   body{
     max-width: 100%;
     margin: 0 auto;
@@ -700,6 +694,7 @@ footer p {
     font-weight: 400;
     color: white;
     letter-spacing: 2px;
+    margin-top: 60px!important; /* Pendiente de aignar como una solución*/
   }
   main .sub-title{
     font-size: 17px;
@@ -831,9 +826,13 @@ footer p {
     .card-btn-verPerfil a{
       font-size: 12px;
     }
-  .carousel-indicators{
-    bottom: -50px;
-  }
+    .carousel-indicators{
+      bottom: -35px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 0 auto;
+      max-width: 80%;
+    }
 
   /* ------------- Estilos Footer ---------- */
   footer{
@@ -842,7 +841,7 @@ footer p {
     display: block;
   }
   footer p{
-    font-size: 10px;
+    font-size: 13px;
     font-weight: lighter;
   }
   .footer-mobile {
@@ -873,10 +872,22 @@ footer .mg-b-20{
 }
 footer .spo{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content:space-between;
   align-items: center;
   padding: 10px 20px;
+}
+footer .mobi{
+  margin: 0 auto;
+  max-width: 40%;
+  height: auto;
+}
+footer .insti {
+  max-width: 40%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
 }
 /* --------- End Estilos Footer ---------- */
 }
@@ -920,6 +931,7 @@ footer .spo{
     font-weight: 400;
     color: white;
     letter-spacing: 1px;
+    margin-top: 60px!important; /* Pendiente de aignar como una solución*/
   }
   main .sub-title{
     font-size: 14px;
@@ -1009,7 +1021,7 @@ footer .spo{
     width: 80px;
     height: 80px;
     margin-top: 20px;
-    transform: translateY(5px);
+    transform: translateY(8px);
   }
   .card-body{
     max-height: 600px;
@@ -1051,9 +1063,13 @@ footer .spo{
     .card-btn-verPerfil a{
       font-size: 12px;
     }
-  .carousel-indicators{
-    bottom: -50px;
-  }
+    .carousel-indicators{
+      bottom: -35px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 0 auto;
+      max-width: 80%;
+    }
 
   /* ------------- Estilos Footer ---------- */
   footer{
@@ -1062,7 +1078,7 @@ footer .spo{
     display: block;
   }
   footer p{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: lighter;
   }
   .footer-mobile {
@@ -1097,6 +1113,17 @@ footer .spo{
   justify-content:space-between;
   align-items: center;
   padding: 10px 20px;
+}
+footer .mobi{
+  max-width: 65%;
+  height: auto;
+}
+footer .insti {
+  max-width: 65%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
 }
 /* --------- End Estilos Footer ---------- */
 }
@@ -1139,6 +1166,7 @@ footer .spo{
     font-weight: 400;
     color: white;
     letter-spacing: 1px;
+    margin-top: 60px!important; /* Pendiente de aignar como una solución*/
   }
   main .sub-title{
     font-size: 14px;
@@ -1227,7 +1255,7 @@ footer .spo{
   .portada img {
     width: 80px;
     height: 80px;
-    margin-top: 20px;
+    margin-top: 25px;
     transform: translateY(5px);
   }
   .card-body{
@@ -1270,9 +1298,13 @@ footer .spo{
     .card-btn-verPerfil a{
       font-size: 12px;
     }
-  .carousel-indicators{
-    bottom: -50px;
-  }
+    .carousel-indicators{
+      bottom: -35px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 0 auto;
+      max-width: 80%;
+    }
 
   /* ------------- Estilos Footer ---------- */
   footer{
@@ -1281,7 +1313,7 @@ footer .spo{
     display: block;
   }
   footer p{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: lighter;
   }
   .footer-mobile {
@@ -1316,6 +1348,17 @@ footer .spo{
   justify-content:space-between;
   align-items: center;
   padding: 10px 20px;
+}
+footer .mobi{
+  max-width: 70%;
+  height: auto;
+}
+footer .insti {
+  max-width: 70%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
 }
 /* --------- End Estilos Footer ---------- */
 }
@@ -1356,6 +1399,7 @@ footer .spo{
     font-weight: 400;
     color: white;
     letter-spacing: 1px;
+    margin-top: 60px!important; /* Pendiente de aignar como una solución*/
   }
   main .sub-title{
     font-size: 14px;
@@ -1444,7 +1488,7 @@ footer .spo{
   .portada img {
     width: 80px;
     height: 80px;
-    margin-top: 20px;
+    margin-top: 25px;
     transform: translateY(5px);
   }
   .card-body{
@@ -1487,9 +1531,13 @@ footer .spo{
     .card-btn-verPerfil a{
       font-size: 12px;
     }
-  .carousel-indicators{
-    bottom: -50px;
-  }
+    .carousel-indicators{
+      bottom: -35px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 0 auto;
+      max-width: 80%;
+    }
 
   /* ------------- Estilos Footer ---------- */
   footer{
@@ -1498,7 +1546,7 @@ footer .spo{
     display: block;
   }
   footer p{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: lighter;
   }
   .footer-mobile {
@@ -1534,12 +1582,23 @@ footer .spo{
   align-items: center;
   padding: 10px 20px;
 }
+footer .mobi{
+  max-width: 80%;
+  height: auto;
+}
+footer .insti {
+  max-width: 80%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
 /* --------- End Estilos Footer ---------- */
 }
 
 
 
-/* Dispositivos mayores o iguales a 335px */
+/* Dispositivos mayores o iguales a 365px */
 
 
 @media (max-width: 365px){
@@ -1576,6 +1635,7 @@ footer .spo{
     font-size: 15px!important;
     font-weight: 400;
     color: white;
+    margin-top: 60px!important; /* Pendiente de aignar como una solución*/
   }
   main .sub-title{
     font-size: 14px;
@@ -1704,11 +1764,15 @@ footer .spo{
       justify-content: center;
     }
     .card-btn-verPerfil a{
-      font-size: 10px;
+      font-size: 12px;
     }
-  .carousel-indicators{
-    bottom: -50px;
-  }
+    .carousel-indicators{
+      bottom: -35px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 0 auto;
+      max-width: 80%;
+    }
 
   /* ------------- Estilos Footer ---------- */
   footer{
@@ -1717,7 +1781,7 @@ footer .spo{
     display: block;
   }
   footer p{
-    font-size: 10px;
+    font-size: 11px;
     font-weight: lighter;
   }
   .footer-mobile {
@@ -1753,6 +1817,17 @@ footer .spo{
   align-items: center;
   padding: 10px 20px;
 }
+footer .mobi{
+  max-width: 100%;
+  height: auto;
+}
+footer .insti {
+  max-width: 100%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
 /* --------- End Estilos Footer ---------- */
 }
 
@@ -1765,7 +1840,8 @@ footer .spo{
   }
   /*  --------------- Estilos Header -------- */
   .contenido-navBar .logo{
-    font-size: 10px;
+    font-size: 13px;
+    letter-spacing: 1.9;
   }
   .contenido-navBar button{
     font-size: 10px;
@@ -1790,6 +1866,7 @@ footer .spo{
     font-size: 14px!important;
     font-weight: 400;
     color: white;
+    margin-top: 60px!important; /* Pendiente de aignar como una solución*/
   }
   main .sub-title{
     font-size: 14px;
@@ -1797,11 +1874,11 @@ footer .spo{
   }
   .text-about_us{
     text-align: justify;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: lighter;
   }
   .slogan{
-    font-size: 10px;
+    font-size: 11px;
     font-style: italic;
     font-weight: lighter;
     letter-spacing: .6;
@@ -1921,9 +1998,12 @@ footer .spo{
       font-size: 10px;
     }
   .carousel-indicators{
-    bottom: -50px;
+    bottom: -35px;
   }
-
+  hr {
+    margin: 0 auto;
+    max-width: 80%;
+  }
   /* ------------- Estilos Footer ---------- */
   footer{
     margin: 0 auto;
@@ -1967,6 +2047,17 @@ footer .spo{
   align-items: center;
   padding: 10px 20px;
 }
+footer .mobi{
+  max-width: 100%;
+  height: auto;
+}
+footer .insti {
+  max-width: 100%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
 /* --------- End Estilos Footer ---------- */
 }
 
@@ -2004,6 +2095,7 @@ footer .spo{
     font-size: 14px!important;
     font-weight: 400;
     color: white;
+    margin-top: 50px!important; /* Pendiente de aignar como una solución*/
   }
   main .sub-title{
     font-size: 14px;
@@ -2135,7 +2227,7 @@ footer .spo{
       font-size: 10px;
     }
   .carousel-indicators{
-    bottom: -50px;
+    bottom: -37px;
   }
 
   /* ------------- Estilos Footer ---------- */
@@ -2181,6 +2273,17 @@ footer .spo{
   align-items: center;
   padding: 10px 20px;
 }
+footer .mobi{
+  max-width: 100%;
+  height: auto;
+}
+footer .insti {
+  max-width: 100%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
 /* --------- End Estilos Footer ---------- */
 }
 
@@ -2220,6 +2323,7 @@ footer .spo{
     font-size: 14px!important;
     font-weight: 400;
     color: white;
+    margin-top: 40px!important; /* Pendiente de aignar como una solución*/
   }
   main .sub-title{
     font-size: 14px;
@@ -2351,7 +2455,7 @@ footer .spo{
       font-size: 9px;
     }
   .carousel-indicators{
-    bottom: -50px;
+    bottom: -38px;
   }
 
   /* ------------- Estilos Footer ---------- */
@@ -2359,6 +2463,7 @@ footer .spo{
     margin: 0 auto;
     max-width: 100%;
     display: block;
+    padding: 0;
   }
   footer p{
     font-size: 10px;
@@ -2396,6 +2501,17 @@ footer .spo{
   justify-content:space-between;
   align-items: center;
   padding: 10px 20px;
+}
+footer .mobi{
+  max-width: 100%;
+  height: auto;
+}
+footer .insti {
+  max-width: 100%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
 }
 /* --------- End Estilos Footer ---------- */
 }
@@ -2568,7 +2684,7 @@ footer .spo{
       font-size: 9px;
     }
   .carousel-indicators{
-    bottom: -50px;
+    bottom: -35px;
   }
 
   /* ------------- Estilos Footer ---------- */
@@ -2614,5 +2730,17 @@ footer .spo{
   align-items: center;
   padding: 10px 20px;
 }
+footer .mobi{
+  max-width: 100%;
+  height: auto;
+}
+footer .insti {
+  max-width: 100%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
+
 /* --------- End Estilos Footer ---------- */
 }
