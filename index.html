@@ -17,9 +17,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap"
         rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -27,66 +27,80 @@
 <body>
     <header class="container-lg mg-b-20">
         <!-- Encabezado del sitio web   -->
-        <nav class="navbar navbar-expand-lg contenido-navBar">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top contenido-navBar">
             <div class="container-fluid mg-b-40">
-              <a class="navbar-brand text-white logo" href="#">FeedlotApp</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse nav-header" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Estadisticas Arduino</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white btn-logout" href="#">Cerrar Sesion</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white btn-login" href="#">Iniciar Sesion</a>
-                  </li>
-                </ul>
-              </div>
+                <a class="navbar-brand text-white logo" href="#">FeedlotApp</a>
+                <button class="navbar-toggler btn-navbar-maxMobile" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark opacity-75" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">FeedlotApp</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body d-flex justify-content-center">
+                        
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                            <li class="nav-item text-center">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-center" href="#">Estadisticas Arduino</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white btn-logout text-center" href="#">Cerrar Sesion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white btn-login text-center" href="#">Iniciar Sesion</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </nav>
+        </nav>
         <!-- FIN ENCABEZADO  -->
 
         <!-- Importación de Carousel Slides -->
         <div id="carouselExampleInterval" class="carousel slide cotenido-carrusel" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="img/img-carrusel/carrusel_1.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="img/img-carrusel/carrusel_2.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/img-carrusel/carrusel_3.png" class="d-block w-100" alt="...">
-              </div>
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="img/img-carrusel/carrusel_1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="img/img-carrusel/carrusel_2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img-carrusel/carrusel_3.png" class="d-block w-100" alt="...">
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
     </header>
 
     <main class="container mg-b-60">
         <h2 class="text-center mg-top-30 mg-top-50 mx-top">Sobre Nosotros</h2>
         <p class="sub-title">Enthusiastic technologists.</p>
         <p class="text-about_us">
-            Un grupo de jóvenes apasionados por la tecnología participó en las
-            olimpiadas de programación organizadas por el INET y el Gobierno de la
-            Ciudad. Desafiados por una situación problemática relacionada con la
+            Un grupo de jóvenes autodidactas apasionados por la tecnología participó en las
+            olimpiadas de programación organizadas por el INET y el Ministerio de Educación de la Republica Argentina. 
+            Desafiados por una situación problemática relacionada con la
             administración y gestión de un Feedlot de ganado, pusieron a prueba sus
             habilidades y trabajaron juntos para encontrar una solución innovadora.
-            A pesar de ser de diferentes colegios, supieron colaborar en equipo y
+            A pesar de ser de diferentes instituciones, supieron colaborar en equipo y
             presentar una solución útil y eficaz que fue destacada por los
             evaluadores de la competencia. Este logro demostró su capacidad de
             enfrentar desafíos y su potencial como futuros líderes en el campo de la
@@ -126,7 +140,8 @@
                     <img src="img/img-technologys/icon-mysql.png" class="d-block w-auto h-75 img-fluid" alt="..." />
                 </div>
                 <div class="col">
-                    <img src="img/img-technologys/icon-bootstrap.png" class="icon-bootstrap d-block w-auto h-75 img-fluid" alt="..." />
+                    <img src="img/img-technologys/icon-bootstrap.png"
+                        class="icon-bootstrap d-block w-auto h-75 img-fluid" alt="..." />
                 </div>
                 <div class="col">
                     <img src="img/img-technologys/icon-php.png" class="d-block w-auto h-75 img-fluid" alt="..." />
@@ -214,7 +229,8 @@
                     </div>
                 </div>
                 <div class="carousel-item contenido-tech-item">
-                    <img src="img/img-technologys/icon-bootstrap.png" class=" icon-bootstrap d-block w-auto h-75" alt="..." />
+                    <img src="img/img-technologys/icon-bootstrap.png" class=" icon-bootstrap d-block w-auto h-75"
+                        alt="..." />
                     <div class="carousel-caption description-item-tech d-md-block">
                         <h5 class="d-block d-md-none">Bootstrap</h5>
                     </div>
@@ -359,7 +375,7 @@
                         <div class="card-text">
                             <p>
                                 Desarrollador de software apasionado y experimentado en varias tecnologías. Comprometido
-                                con los ojetivos del proyecto para ofrecer soluciones más completas a los clientes.Me
+                                con los objetivos del proyecto para ofrecer soluciones más completas a los clientes.Me
                                 encanta colaborar con mi equipo, compartiendo conocimientos y perspectivas para lograr
                                 los mejores resultados. Estoy siempre en busca de nuevos desafíos y oportunidades para
                                 seguir creciendo como profesional.
@@ -498,7 +514,7 @@
                             <div class="card-text mg-b-20">
                                 <p>
                                     Desarrollador de software apasionado y experimentado en varias tecnologías.
-                                    Comprometido con los ojetivos del proyecto para ofrecer soluciones más completas a
+                                    Comprometido con los objetivos del proyecto para ofrecer soluciones más completas a
                                     los clientes.Me encanta colaborar con mi equipo, compartiendo conocimientos y
                                     perspectivas para lograr los mejores resultados. Estoy siempre en busca de nuevos
                                     desafíos y oportunidades para seguir creciendo como profesional.
@@ -526,7 +542,8 @@
         </div>
     </section>
     <footer>
-        <br/><hr />
+        <br />
+        <hr />
         <div class="footer p-3 container-lg" align="center">
             <small class="text-reset">
                 <div class="row footer-mobile">
@@ -547,7 +564,8 @@
                         <p>Bruno Caruso - Franco Sancristobal - Brian Duran - Gonzalo Benavente</p>
                     </div>
                     <div class="col spo">
-                        <img src="img/img-institutos/icono-caba.png" class="by insti" alt="Ciudad Autónoma de Buenos Aires">
+                        <img src="img/img-institutos/icono-caba.png" class="by insti"
+                            alt="Ciudad Autónoma de Buenos Aires">
                         <img src="img/img-institutos/icon-gobAr.png" class="by insti" alt="Gobierno">
                     </div>
                 </div>

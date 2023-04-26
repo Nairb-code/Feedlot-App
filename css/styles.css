@@ -68,15 +68,22 @@ body{
 .btn-login{
   background-color: #0a53be;
   border-radius: 5px;
+  margin-right: 20px;
 }
 .btn-login:hover{
   border: 2px solid #4282e3;
 }
-
+.navbar-nav li{
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
 /*  SECCION MAIN  */
 h2{
   font-weight: 300;
 }
+ section .the-enthusiastic{
+  color:rgb(111, 189, 192);
+ }
 .sub-title{
   color:rgb(111, 189, 192);
   font-weight: 400;
@@ -116,6 +123,7 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;/*AGREGADO RECIENTEMENTE*/
   /*position: absolute;*/
 }
 .portada.portada-brian{
@@ -500,9 +508,93 @@ footer p {
   /*--------- End Estilos Footer ---------- */
 }
 
+@media (max-width: 9000px) { 
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-end!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 0px 20px;
+  }
+  /*AGREGADO*/
 
 
-@media (max-width: 920px) { 
+    /*end agregado*/
+  .card-body{
+    max-height: 400px;
+  }
+  .card-perfil h5{
+    margin-top: 10px;
+    font-size: 14px!important;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+  }
+  .card-subtitle{
+    font-size: 13px;
+    font-weight:400;
+    letter-spacing: 1.7px;
+  }
+  .card-text{
+    margin-top: 20px;
+    font-size: 12px!important;
+    font-weight: 400;
+    text-align: center;
+    max-height: auto;
+  }
+  hr {
+    margin: 30px auto;
+    max-width: 80%;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  footer .spo{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  footer .mobi{
+    max-width: 80%;
+    height: auto;
+  }
+  footer .insti {
+    max-width: 80%;
+    height: auto;
+  }
+  footer .grueso{
+    filter: brightness(100);
+  }
+  .col:nth-child(2) {
+    order: 0;
+  }
+}
+
+
+@media (max-width: 992px) { 
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
   .card-body{
     max-height: 400px;
   }
@@ -519,10 +611,43 @@ footer p {
   }
   .card-text{
     margin-top: 5px;
-    font-size: 11px!important;
+    font-size: 10.5px!important;
     font-weight: 400;
     text-align: center;
     max-height: auto;
+  }
+  hr {
+    margin: 30px auto;
+    max-width: 80%;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  footer .spo{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  footer .mobi{
+    max-width: 80%;
+    height: auto;
+  }
+  footer .insti {
+    max-width: 80%;
+    height: auto;
+  }
+  footer .grueso{
+    filter: brightness(100);
+  }
+  .col:nth-child(2) {
+    order: 0;
   }
 }
 
@@ -531,6 +656,22 @@ footer p {
 
 
 @media (max-width: 850px) {
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
   body{
     max-width: 100%;
     margin: 0 auto;
@@ -574,7 +715,7 @@ footer p {
   /* ----------- Estilos Perfiles ----------------- */
   section .the-enthusiastic{
     margin-top: 100px;
-    font-size: 19px;
+    font-size: 17px!important;
     font-weight: 400;
     letter-spacing: 1.5px;
   }
@@ -632,7 +773,10 @@ footer p {
     .card-btn-verPerfil{
       margin-top: 80px;
     }
-
+    hr {
+      margin: 30px auto;
+      max-width: 90%;
+    }
   /* ------------- Estilos Footer ---------- */
   footer{
     max-width: 100%;
@@ -648,17 +792,33 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
   }
   .col:nth-child(2) {
-    order: -1;
+    order: 0;
   }
   /* --------- End Estilos Footer ---------- */
 }
 
 
 @media (max-width: 768px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
   body{
     max-width: 100%;
     margin: 0 auto;
@@ -729,7 +889,7 @@ footer p {
     height: auto;
   }
   .contenido-tech-item.active{
-    height: 160;
+    height: 170;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -827,10 +987,10 @@ footer p {
       font-size: 12px;
     }
     .carousel-indicators{
-      bottom: -35px; /*bottom: -50px*/
+      bottom: -50px; /*bottom: -50px*/
     }
     hr {
-      margin: 0 auto;
+      margin: 30px auto;
       max-width: 80%;
     }
 
@@ -896,6 +1056,22 @@ footer .grueso{
 
 
 @media (max-width: 550px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
   body{
     max-width: 100%;
     margin: 0 auto;
@@ -1064,10 +1240,10 @@ footer .grueso{
       font-size: 12px;
     }
     .carousel-indicators{
-      bottom: -35px; /*bottom: -50px*/
+      bottom: -50px; /*bottom: -50px*/
     }
     hr {
-      margin: 0 auto;
+      margin: 30px auto;
       max-width: 80%;
     }
 
@@ -1131,6 +1307,22 @@ footer .grueso{
 
 
 @media (max-width: 476px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
   body{
     max-width: 100%;
     margin: 0 auto;
@@ -1299,10 +1491,10 @@ footer .grueso{
       font-size: 12px;
     }
     .carousel-indicators{
-      bottom: -35px; /*bottom: -50px*/
+      bottom: -50px; /*bottom: -50px*/
     }
     hr {
-      margin: 0 auto;
+      margin: 30px auto;
       max-width: 80%;
     }
 
@@ -1364,6 +1556,22 @@ footer .grueso{
 }
 
 @media (max-width: 425px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
   body{
     max-width: 100%;
     margin: 0 auto;
@@ -1377,8 +1585,9 @@ footer .grueso{
   }
   .contenido-navBar button{
     font-size: 14px;
-    color: wheat;
+    color: white;
   }
+
   .contenido-navBar{
     display: flex!important;
     flex-direction: row;
@@ -1532,10 +1741,10 @@ footer .grueso{
       font-size: 12px;
     }
     .carousel-indicators{
-      bottom: -35px; /*bottom: -50px*/
+      bottom: -50px; /*bottom: -50px*/
     }
     hr {
-      margin: 0 auto;
+      margin: 30px auto;
       max-width: 80%;
     }
 
@@ -1602,6 +1811,25 @@ footer .grueso{
 
 
 @media (max-width: 365px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li a{
+    font-size: 12px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
   body{
     max-width: 100%;
     margin: 0 auto;
@@ -1706,15 +1934,15 @@ footer .grueso{
   }
   /* ------------------ Section Perfiles [Cards] ------------ */
   .card{
-  width: 100%;
-  max-height: 400px;
+  width: 90%;
+  max-height: 410px;
   }
   /*  --------- Stilos Perfiles [Contenedor de Card-items]---------------- */
   .card-perfil-scroll{
     margin: 0 auto;
     text-align: center;
     width: 100%;
-    height: 450px;
+    height: 410px;
   }
   .portada {
     height: 44px;
@@ -1733,12 +1961,12 @@ footer .grueso{
     margin-top: -20px;
   }
     .card-perfil h5{
-      font-size: 10px!important;
+      font-size: 12px!important;
       font-weight: 700;
       letter-spacing: 2px;
     }
     .card-subtitle{
-      font-size: 10px;
+      font-size: 12px;
       font-weight:lighter;
       letter-spacing: 1.7px;
       font-weight: bolder;
@@ -1767,10 +1995,10 @@ footer .grueso{
       font-size: 12px;
     }
     .carousel-indicators{
-      bottom: -35px; /*bottom: -50px*/
+      bottom: -50px; /*bottom: -50px*/
     }
     hr {
-      margin: 0 auto;
+      margin: 30px auto;
       max-width: 80%;
     }
 
@@ -1833,6 +2061,17 @@ footer .grueso{
 
 
 @media (max-width: 320px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li a{
+    font-size: 12px!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px;
+  }
   body{
     max-width: 100%;
     margin: 0 auto;
@@ -1945,7 +2184,7 @@ footer .grueso{
     margin: 0 auto;
     text-align: center;
     width: 100%;
-    height: 450px;
+    height: 400px;
   }
   .portada {
     height: 34px;
@@ -1964,12 +2203,12 @@ footer .grueso{
     margin-top: -20px;
   }
     .card-perfil h5{
-      font-size: 10px!important;
+      font-size: 12px!important;
       font-weight: 700;
       letter-spacing: 2px;
     }
     .card-subtitle{
-      font-size: 10px;
+      font-size: 12px;
       font-weight:lighter;
       letter-spacing: 1.7px;
       font-weight: bolder;
@@ -1997,13 +2236,13 @@ footer .grueso{
     .card-btn-verPerfil a{
       font-size: 10px;
     }
-  .carousel-indicators{
-    bottom: -35px;
-  }
-  hr {
-    margin: 0 auto;
-    max-width: 80%;
-  }
+    .carousel-indicators{
+      bottom: -50px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 80%;
+    }
   /* ------------- Estilos Footer ---------- */
   footer{
     margin: 0 auto;
@@ -2063,6 +2302,14 @@ footer .grueso{
 
 
 @media (max-width: 270px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px;
+  }
   body{
     max-width: 100%;
     margin: 0 auto;
@@ -2070,7 +2317,7 @@ footer .grueso{
   }
   /*  --------------- Estilos Header -------- */
   .contenido-navBar .logo{
-    font-size: 10px;
+    font-size: 12px;
   }
   .contenido-navBar button{
     font-size: 10px;
@@ -2193,12 +2440,12 @@ footer .grueso{
     margin-top: -20px;
   }
     .card-perfil h5{
-      font-size: 10px!important;
+      font-size: 11px!important;
       font-weight: 700;
       letter-spacing: 2px;
     }
     .card-subtitle{
-      font-size: 9px;
+      font-size: 11px;
       font-weight:lighter;
       letter-spacing: 1.7px;
       font-weight: bolder;
@@ -2226,9 +2473,13 @@ footer .grueso{
     .card-btn-verPerfil a{
       font-size: 10px;
     }
-  .carousel-indicators{
-    bottom: -37px;
-  }
+    .carousel-indicators{
+      bottom: -50px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 80%;
+    }
 
   /* ------------- Estilos Footer ---------- */
   footer{
@@ -2290,6 +2541,25 @@ footer .grueso{
 
 
 @media (max-width: 248px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px;
+  }
+  .navbar ul li a{
+    font-size: 11px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 5px 10px;
+    padding: 5px 10px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 5px 10px;
+    padding: 5px 10px;
+  }
   body{
     max-width: 100%;
     margin: 0 auto;
@@ -2297,7 +2567,7 @@ footer .grueso{
   }
   /*  --------------- Estilos Header -------- */
   .contenido-navBar .logo{
-    font-size: 10px;
+    font-size: 12px;
   }
   .contenido-navBar button{
     font-size: 10px;
@@ -2421,12 +2691,12 @@ footer .grueso{
     margin-top: -20px;
   }
     .card-perfil h5{
-      font-size: 9px!important;
+      font-size: 10px!important;
       font-weight: 700;
       letter-spacing: 2px;
     }
     .card-subtitle{
-      font-size: 8px;
+      font-size: 10px;
       font-weight:lighter;
       letter-spacing: 1.7px;
       font-weight: bolder;
@@ -2454,9 +2724,13 @@ footer .grueso{
     .card-btn-verPerfil a{
       font-size: 9px;
     }
-  .carousel-indicators{
-    bottom: -38px;
-  }
+    .carousel-indicators{
+      bottom: -50px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 80%;
+    }
 
   /* ------------- Estilos Footer ---------- */
   footer{
@@ -2519,6 +2793,14 @@ footer .grueso{
 
 
 @media (max-width: 210px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px;
+  }
   body{
     max-width: 100%;
     margin: 0 auto;
@@ -2526,7 +2808,7 @@ footer .grueso{
   }
   /*  --------------- Estilos Header -------- */
   .contenido-navBar .logo{
-    font-size: 8px;
+    font-size: 10px;
     letter-spacing: .4px;
     font-weight: bolder;
   }
@@ -2683,9 +2965,13 @@ footer .grueso{
     .card-btn-verPerfil a{
       font-size: 9px;
     }
-  .carousel-indicators{
-    bottom: -35px;
-  }
+    .carousel-indicators{
+      bottom: -50px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 80%;
+    }
 
   /* ------------- Estilos Footer ---------- */
   footer{
