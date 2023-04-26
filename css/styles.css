@@ -1,0 +1,3032 @@
+:root{
+  --portada-brian: url(../img/img-perfiles/perfil-brian/portada-brian.png);
+  --portada-franco: url(../img/img-perfiles/perfil-franco/portada-franco.png);
+  --portada-bruno: url(../img/img-perfiles/perfil-bruno/portada-bruno.png);
+  --portada-gonzalo: url(../img/img-perfiles/perfil-gonzalo/portada-gonzalo.png);
+}
+
+.icon-bootstrap{
+  filter: grayscale(100%);
+}
+/*  GLOABLES  */
+.mg-b-20{
+  margin-bottom: 20px;
+}
+.mg-b-40{
+  margin-bottom: 40px;
+}
+.mg-b-60{
+  margin-bottom: 60px;
+} 
+.mg-top-30{
+  margin-top: 30px;
+}
+/* ------------ */
+.the-enthusiastic{
+  font-family: 'Press Start 2P', cursive;
+}
+body{
+  background-color: #5D6D7E;
+  color: white!important;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+}
+
+/*  SECCION HEADER - NAVBAR */
+.icon-feedlotApp{
+  font-weight: bolder;
+}
+.navbar-nav li{
+  margin-right: 20px;
+}
+.navbar-nav li:last-of-type{
+  margin-right: 0px;
+}
+.nav-item button{
+  font-size: 14px;
+}
+.btn-logout{
+  border: 1px solid #3d00f9!important;
+  color: #0920c7;
+}
+.btn-header{
+  display: none;
+}
+.seccion-carrusel {
+  width: 80vh;
+  margin: 0 auto;
+}
+.btn-logout{
+  color:white;
+  border: 2px solid #0a53be;
+  border-radius: 5px;
+}
+.btn-logout:hover{
+  background-color: #0a53be;
+}
+.btn-login{
+  background-color: #0a53be;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.btn-login:hover{
+  border: 2px solid #4282e3;
+}
+.navbar-nav li{
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+/*  SECCION MAIN  */
+h2{
+  font-weight: 300;
+}
+ section .the-enthusiastic{
+  color:rgb(111, 189, 192);
+ }
+.sub-title{
+  color:rgb(111, 189, 192);
+  font-weight: 400;
+  font-size: 17px;
+}
+.text-about_us{
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+.carrusel-mobile-technology{
+  display: none;
+}
+.slogan{
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+/*  SECCION PERFILES  [about us]*/
+.card {
+  background: rgba(217, 217, 217, 0.19);
+  border: 0.44px solid #585656;
+  box-shadow: 4px 8px 8px rgba(39, 38, 38, 0.25);
+  border-radius: 8px;
+  height: 500px;
+  width: 18rem; /* agregado desde css. Quitar desde el html*/
+}
+.card-section-perfil{
+   /* probando ...*/
+  width: 100%;
+  margin: 0 auto;
+}
+.portada {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;/*AGREGADO RECIENTEMENTE*/
+  /*position: absolute;*/
+}
+.portada.portada-brian{
+  background: var(--portada-brian);
+  background-size: cover;
+}
+.portada.portada-franco{
+  background: var(--portada-franco);
+  background-size: cover;
+}
+.portada.portada-bruno{
+  background: var(--portada-bruno);
+  background-size: cover;
+}
+.portada.portada.portada-gonzalo{
+  background: var(--portada-gonzalo);
+  background-size: cover;
+}
+/*
+.portada img {
+  width: 137px;
+  height: 137px;
+  top: 0px;
+  position: relative;
+}*/
+.portada img {
+  width: 95px;
+  height: 95px;
+  margin-top: 13px;
+  transform: translateY(13px);
+  /*position: absolute;*/
+   /*  position: relative;*/
+  /*top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+}
+.card-body{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-perfil{
+  /*position: relative;*/
+  /*top: calc(137px + 5px);*/
+  height: 15%;
+}
+.card-subtitle{
+  font-weight: 500!important;
+  color:rgb(111, 189, 192);
+  text-shadow: #b8b8b8!important;
+}
+.card-text{
+  /*position: relative;*/
+  /*top: calc(137px + 10px);*/
+  /*height: 200px;*/
+  height: 70%;
+  font-size: 11px;
+  letter-spacing: 1.3px;
+  text-align: center;
+  font-weight: lighter;
+  /*text-align: justify;*/
+}
+
+.card-btn-verPerfil{
+  /*position: relative;*/
+  height: 15%;
+  margin: 0 auto;
+  width: 90%;
+  /*bottom: -160px;*/
+}
+.text-rol{
+  font-weight: lighter;
+  letter-spacing: 0.8px;
+  font-style: italic;
+}
+
+/*  --------------- */
+/*  SECCION FOOTER  */
+footer p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.seccion-escuelas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seccion-escuelas{
+  margin-bottom: 0px;
+}
+.seccion-escuelas img{
+  margin: 0 10px;
+  width: auto;
+  height: 40px;
+}
+.by{
+  width: auto;
+  height: 40px;
+}
+.carrusel-perfiles{
+  display: none;
+}
+
+/*  ------------------------------------ MEDIA QUERYS --------------------------*/
+
+
+@media (max-width: 2100px){
+  body{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .nav-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .carousel-item img {
+    height: 90vh;
+    object-fit: contain;
+  }
+  /*  ----------- Estilos Main ----------- */
+  main h2 {
+    font-size: 23px!important;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  main .sub-title{
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    font-style: italic;
+  }
+  .text-about_us{
+    text-align: justify;
+    font-size: 16px;
+  }
+  .slogan{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 600;
+  }
+  /* ------ End Main ------- */
+  /* -------- Estilos Section Technologys -------- */
+  section h2 {
+    font-size: 23px!important;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  .carrusel-desktop-technology{
+    display: block;
+  }
+  .carrusel-mobile-technology{
+    display: none;
+  }
+/* ---------- End Section Technologys ----------- */
+
+/* ----------- Estilos Perfiles ----------------- */
+  section .the-enthusiastic{
+    margin-top: 100px;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  .lista-perfiles{
+    display: flex;
+  }
+  .carrusel-perfiles{
+    display: none;
+  }
+  .lista-carrusel-perfiles{
+    text-align: center;
+  }
+  /* ------------------ Section Perfiles [Cards] ------------ */
+  .card{
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* --------- Stilos Perfiles [Contenedor de Card-items]---------------- */
+  .card-perfil-scroll{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  .portada {
+    height: 54px;
+    width: 100%;
+  }
+  .portada img {
+    width: 90px;
+    height: 90px;
+    margin-top: 15px;
+    transform: translateY(10px);
+  }
+  .card-body{
+    max-height: 400px;
+  }
+    .card-perfil h5{
+      margin-top: 0px;
+      font-size: 11px!important;
+      font-weight: 700;
+      letter-spacing: 1.7px;
+    }
+    .card-subtitle{
+      font-size: 12px;
+      font-weight:400;
+      letter-spacing: 1.9px;
+    }
+    .card-text{
+      margin-top: 0px;
+      font-size: 12px!important;
+      font-weight: 400;
+      text-align: center;
+      max-height: auto;
+    }
+    .card-btn-verPerfil{
+      margin-top: 40px;
+    }
+
+ /*------------- Estilos Footer ----------*/
+  footer{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  footer p{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .col:nth-child(2) {
+    order: -1;
+  }
+/* --------- End Estilos Footer ---------- */
+}
+
+
+
+
+@media (max-width: 10500px){
+  body{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .nav-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .carousel-item img {
+    height: 400px;
+    object-fit: contain;
+  }
+  /*  ----------- Estilos Main ----------- */
+  main h2 {
+    font-size: 23px!important;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  main .sub-title{
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    font-style: italic;
+  }
+  .text-about_us{
+    text-align: justify;
+    font-size: 16px;
+  }
+  .slogan{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 600;
+  }
+  /* ------ End Main ------- */
+  /* -------- Estilos Section Technologys -------- */
+  section h2 {
+    font-size: 23px!important;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  .carrusel-desktop-technology{
+    display: block;
+  }
+  .carrusel-mobile-technology{
+    display: none;
+  }
+
+  /* ---------- End Section Technologys ----------- */
+  /* ----------- Estilos Perfiles ----------------- */
+  section .the-enthusiastic{
+    margin-top: 100px;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  .lista-perfiles{
+    display: flex;
+  }
+  .carrusel-perfiles{
+    display: none;
+  }
+  .lista-carrusel-perfiles{
+    text-align: center;
+  }
+  /* ------------------ Section Perfiles [Cards] ------------ */
+  .card{
+    width: 100%;
+    margin: 0 auto;
+  }
+  /*  --------- Stilos Perfiles [Contenedor de Card-items]---------------- */
+  .card-perfil-scroll{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  .portada {
+    height: 54px;
+    width: 100%;
+  }
+  .portada img {
+    width: 90px;
+    height: 90px;
+    margin-top: 15px;
+    transform: translateY(10px);
+  }
+  .card-body{
+    max-height: 400px;
+  }
+    .card-perfil h5{
+      margin-top: 0px;
+      font-size: 11px!important;
+      font-weight: 700;
+      letter-spacing: 1.7px;
+    }
+    .card-subtitle{
+      font-size: 12px;
+      font-weight:400;
+      letter-spacing: 1.9px;
+    }
+    .card-text{
+      margin-top: 0px;
+      font-size: 12px!important;
+      font-weight: 400;
+      text-align: center;
+      max-height: auto;
+    }
+    .card-btn-verPerfil{
+      margin-top: 40px;
+    }
+
+  /* ------------- Estilos Footer ---------- */
+  footer{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  footer p{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .col:nth-child(2) {
+    order: -1;
+  }
+  /*--------- End Estilos Footer ---------- */
+}
+
+@media (max-width: 9000px) { 
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-end!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 0px 20px;
+  }
+  /*AGREGADO*/
+
+
+    /*end agregado*/
+  .card-body{
+    max-height: 400px;
+  }
+  .card-perfil h5{
+    margin-top: 10px;
+    font-size: 14px!important;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+  }
+  .card-subtitle{
+    font-size: 13px;
+    font-weight:400;
+    letter-spacing: 1.7px;
+  }
+  .card-text{
+    margin-top: 20px;
+    font-size: 12px!important;
+    font-weight: 400;
+    text-align: center;
+    max-height: auto;
+  }
+  hr {
+    margin: 30px auto;
+    max-width: 80%;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  footer .spo{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  footer .mobi{
+    max-width: 80%;
+    height: auto;
+  }
+  footer .insti {
+    max-width: 80%;
+    height: auto;
+  }
+  footer .grueso{
+    filter: brightness(100);
+  }
+  .col:nth-child(2) {
+    order: 0;
+  }
+}
+
+
+@media (max-width: 992px) { 
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .card-body{
+    max-height: 400px;
+  }
+  .card-perfil h5{
+    margin-top: 10px;
+    font-size: 12px!important;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+  }
+  .card-subtitle{
+    font-size: 11px;
+    font-weight:400;
+    letter-spacing: 1.7px;
+  }
+  .card-text{
+    margin-top: 5px;
+    font-size: 10.5px!important;
+    font-weight: 400;
+    text-align: center;
+    max-height: auto;
+  }
+  hr {
+    margin: 30px auto;
+    max-width: 80%;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  footer .spo{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  footer .mobi{
+    max-width: 80%;
+    height: auto;
+  }
+  footer .insti {
+    max-width: 80%;
+    height: auto;
+  }
+  footer .grueso{
+    filter: brightness(100);
+  }
+  .col:nth-child(2) {
+    order: 0;
+  }
+}
+
+
+
+
+
+@media (max-width: 850px) {
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  body{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  /*  ----------- Estilos Main ----------- */
+  main h2 {
+    font-size: 23px!important;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  main .sub-title{
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-style: italic;
+  }
+  .text-about_us{
+    text-align: justify;
+    font-size: 16px;
+  }
+  .slogan{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 600;
+  }
+  /* ------ End Main ------- */
+  /* -------- Estilos Section Technologys -------- */
+  section h2 {
+    font-size: 23px!important;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  .carrusel-desktop-technology{
+    display: block;
+  }
+  .carrusel-mobile-technology{
+    display: none;
+  }
+
+  /* ---------- End Section Technologys ----------- */
+  /* ----------- Estilos Perfiles ----------------- */
+  section .the-enthusiastic{
+    margin-top: 100px;
+    font-size: 17px!important;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+  .lista-perfiles{
+    display: flex;
+  }
+  .carrusel-perfiles{
+    display: none;
+  }
+  .lista-carrusel-perfiles{
+    text-align: center;
+  }
+  /* ------------------ Section Perfiles [Cards] ------------ */
+  .card{
+    width: 100%;
+    margin: 0 auto;
+  }
+  /*  --------- Stilos Perfiles [Contenedor de Card-items]---------------- */
+  .card-perfil-scroll{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  .portada {
+    height: 34px;
+    width: 100%;
+  }
+  .portada img {
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+    transform: translateY(5px);
+  }
+  .card-body{
+    max-height: 400px;
+  }
+    .card-perfil h5{
+      margin-top: 30px;
+      font-size: 11px!important;
+      font-weight: 700;
+      letter-spacing: 1.7px;
+    }
+    .card-subtitle{
+      font-size: 11px;
+      font-weight:400;
+      letter-spacing: 1.7px;
+    }
+    .card-text{
+      margin-top: 20px;
+      font-size: 10px!important;
+      font-weight: 400;
+      text-align: center;
+      max-height: auto;
+    }
+    .card-btn-verPerfil{
+      margin-top: 80px;
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 90%;
+    }
+  /* ------------- Estilos Footer ---------- */
+  footer{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  footer p{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .col:nth-child(2) {
+    order: 0;
+  }
+  /* --------- End Estilos Footer ---------- */
+}
+
+
+@media (max-width: 768px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  body{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /*  --------------- Estilos Header -------- */
+  .contenido-navBar .logo{
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+  }
+  .contenido-navBar button{
+    font-size: 14px;
+    color: wheat;
+  }
+  .contenido-navBar{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cotenido-carrusel{
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* ------ Estilos Main ----- */ 
+  main h2 {
+    font-size: 19px!important;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 60px!important; /* Pendiente de aignar como una solución*/
+  }
+  main .sub-title{
+    font-size: 17px;
+    letter-spacing: 1.8px;
+  }
+  .text-about_us{
+    text-align: justify;
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  .slogan{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: .6;
+  }
+  /* ------ End Main ------- */
+
+  /* -------- Estilos Section Technologys -------- */
+  section h2 {
+    font-size: 19px!important;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  .carrusel-desktop-technology{
+    display: none;
+  }
+  .carrusel-mobile-technology{
+    display: block;
+  }
+  .contenido-tech{
+    height: auto;
+  }
+  .contenido-tech-item.active{
+    height: 170;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido-tech-item.active img{
+    height: 50px!important;
+    width: auto!important;
+    margin-bottom: 100px;
+  }
+  .description-item-tech h5{
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  /* ---------- End Section Technologys ----------- */
+
+  /* ------------- Estilos Perfiles ------------- */
+  section h2.the-enthusiastic{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px!important;
+    font-weight: lighter;
+    margin-top: 80px;
+    line-height: 20px;
+    color:rgb(111, 189, 192);
+  }
+  .lista-perfiles{
+    display: none;
+  }
+  .carrusel-perfiles{
+    display: block;
+  }
+  .lista-carrusel-perfiles{
+    text-align: center;
+  }
+  /* ------------------ Section Perfiles [Cards] ------------ */
+  .card{
+  width: 60%;
+  max-height: 450px;
+  }
+  /*  --------- Stilos Perfiles [Contenedor de Card-items]---------------- */
+  .card-perfil-scroll{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 450px;
+  }
+  .portada {
+    height: 54px;
+    width: 100%;
+  }
+  .portada img {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    transform: translateY(5px);
+  }
+  .card-body{
+    max-height: 600px;
+  }
+  .card-body.mg-top-30{
+    margin-top: 0px;
+  }
+    .card-perfil h5{
+      font-size: 14px!important;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .card-subtitle{
+      font-size: 13px;
+      font-weight:lighter;
+      letter-spacing: 1.6px;
+      font-weight: bolder;
+    }
+    .card-text{
+      margin-top: 15px;
+      font-size: 12px!important;
+      font-weight: lighter;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      max-height: auto;     
+    }
+    .card-text.mg-b-20{
+      margin-bottom: 0px;
+    }
+    .card-btn-verPerfil{
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-btn-verPerfil a{
+      font-size: 12px;
+    }
+    .carousel-indicators{
+      bottom: -50px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 80%;
+    }
+
+  /* ------------- Estilos Footer ---------- */
+  footer{
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+  }
+  footer p{
+    font-size: 13px;
+    font-weight: lighter;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer .seccion-escuelas{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+footer .icono-escuelas{
+  width: 35px;
+  height: auto;
+  margin-bottom: 20px;
+}
+footer .icono-escuelas:last-of-type{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+footer .mg-b-20{
+  margin-bottom: 0px!important;
+}
+footer .spo{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+footer .mobi{
+  margin: 0 auto;
+  max-width: 40%;
+  height: auto;
+}
+footer .insti {
+  max-width: 40%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
+/* --------- End Estilos Footer ---------- */
+}
+
+
+
+
+@media (max-width: 550px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  body{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /*  --------------- Estilos Header -------- */
+  .contenido-navBar .logo{
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+  }
+  .contenido-navBar button{
+    font-size: 14px;
+    color: wheat;
+  }
+  .contenido-navBar{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cotenido-carrusel{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* ------ Estilos Main ----- */ 
+  main h2 {
+    font-size: 17px!important;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 60px!important; /* Pendiente de aignar como una solución*/
+  }
+  main .sub-title{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+  .text-about_us{
+    text-align: justify;
+    font-size: 13px;
+    font-weight: lighter;
+  }
+  .slogan{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: .6;
+  }
+  /* ------ End Main ------- */
+
+  /* -------- Estilos Section Technologys -------- */
+  section h2 {
+    font-size: 17px!important;
+    font-weight: 400;
+    letter-spacing: 1.7px;
+  }
+  .carrusel-desktop-technology{
+    display: none;
+  }
+  .carrusel-mobile-technology{
+    display: block;
+  }
+  .contenido-tech{
+    height: auto;
+  }
+  .contenido-tech-item.active{
+    height: 160;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido-tech-item.active img{
+    height: 50px!important;
+    width: auto!important;
+    margin-bottom: 100px;
+  }
+  .description-item-tech h5{
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  /* ---------- End Section Technologys ----------- */
+
+  /* ------------- Estilos Perfiles ------------- */
+  section h2.the-enthusiastic{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px!important;
+    font-weight: lighter;
+    margin-top: 80px;
+    line-height: 20px;
+    color:rgb(111, 189, 192);
+  }
+  .lista-perfiles{
+    display: none;
+  }
+  .carrusel-perfiles{
+    display: block;
+  }
+  .lista-carrusel-perfiles{
+    text-align: center;
+  }
+  /* ------------------ Section Perfiles [Cards] ------------ */
+  .card{
+  width: 70%;
+  max-height: 400px;
+  }
+  /*  --------- Stilos Perfiles [Contenedor de Card-items]---------------- */
+  .card-perfil-scroll{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 450px;
+  }
+  .portada {
+    height: 44px;
+    width: 100%;
+  }
+  .portada img {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    transform: translateY(8px);
+  }
+  .card-body{
+    max-height: 600px;
+  }
+  .card-body.mg-top-30{
+    margin-top: -5px;
+  }
+    .card-perfil h5{
+      font-size: 12px!important;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .card-subtitle{
+      font-size: 12px;
+      font-weight:lighter;
+      letter-spacing: 1.6px;
+      font-weight: bolder;
+    }
+    .card-text{
+      margin-top: 15px;
+      font-size: 12px!important;
+      font-weight: lighter;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      max-height: auto;     
+    }
+    .card-text.mg-b-20{
+      margin-bottom: 0px;
+    }
+    .card-btn-verPerfil{
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-btn-verPerfil a{
+      font-size: 12px;
+    }
+    .carousel-indicators{
+      bottom: -50px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 80%;
+    }
+
+  /* ------------- Estilos Footer ---------- */
+  footer{
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+  }
+  footer p{
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer .seccion-escuelas{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+footer .icono-escuelas{
+  width: 35px;
+  height: auto;
+  margin-bottom: 20px;
+}
+footer .icono-escuelas:last-of-type{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+footer .mg-b-20{
+  margin-bottom: 0px!important;
+}
+footer .spo{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+footer .mobi{
+  max-width: 65%;
+  height: auto;
+}
+footer .insti {
+  max-width: 65%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
+/* --------- End Estilos Footer ---------- */
+}
+
+
+
+@media (max-width: 476px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  body{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /*  --------------- Estilos Header -------- */
+  .contenido-navBar .logo{
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+  }
+  .contenido-navBar button{
+    font-size: 14px;
+    color: wheat;
+  }
+  .contenido-navBar{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cotenido-carrusel{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* ------ Estilos Main ----- */ 
+  main h2 {
+    font-size: 17px!important;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 60px!important; /* Pendiente de aignar como una solución*/
+  }
+  main .sub-title{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+  .text-about_us{
+    text-align: justify;
+    font-size: 13px;
+    font-weight: lighter;
+  }
+  .slogan{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: .6;
+  }
+  /* ------ End Main ------- */
+
+  /* -------- Estilos Section Technologys -------- */
+  section h2 {
+    font-size: 17px!important;
+    font-weight: 400;
+    letter-spacing: 1.7px;
+  }
+  .carrusel-desktop-technology{
+    display: none;
+  }
+  .carrusel-mobile-technology{
+    display: block;
+  }
+  .contenido-tech{
+    height: auto;
+  }
+  .contenido-tech-item.active{
+    height: 160;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido-tech-item.active img{
+    height: 50px!important;
+    width: auto!important;
+    margin-bottom: 100px;
+  }
+  .description-item-tech h5{
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  /* ---------- End Section Technologys ----------- */
+
+  /* ------------- Estilos Perfiles ------------- */
+  section h2.the-enthusiastic{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px!important;
+    font-weight: lighter;
+    margin-top: 80px;
+    line-height: 20px;
+    color:rgb(111, 189, 192);
+  }
+  .lista-perfiles{
+    display: none;
+  }
+  .carrusel-perfiles{
+    display: block;
+  }
+  .lista-carrusel-perfiles{
+    text-align: center;
+  }
+  /* ------------------ Section Perfiles [Cards] ------------ */
+  .card{
+  width: 80%;
+  max-height: 400px;
+  }
+  /*  --------- Stilos Perfiles [Contenedor de Card-items]---------------- */
+  .card-perfil-scroll{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 450px;
+  }
+  .portada {
+    height: 44px;
+    width: 100%;
+  }
+  .portada img {
+    width: 80px;
+    height: 80px;
+    margin-top: 25px;
+    transform: translateY(5px);
+  }
+  .card-body{
+    max-height: 600px;
+  }
+  .card-body.mg-top-30{
+    margin-top: -5px;
+  }
+    .card-perfil h5{
+      font-size: 12px!important;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .card-subtitle{
+      font-size: 12px;
+      font-weight:lighter;
+      letter-spacing: 1.6px;
+      font-weight: bolder;
+    }
+    .card-text{
+      margin-top: 15px;
+      font-size: 12px!important;
+      font-weight: lighter;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      max-height: auto;     
+    }
+    .card-text.mg-b-20{
+      margin-bottom: 0px;
+    }
+    .card-btn-verPerfil{
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-btn-verPerfil a{
+      font-size: 12px;
+    }
+    .carousel-indicators{
+      bottom: -50px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 80%;
+    }
+
+  /* ------------- Estilos Footer ---------- */
+  footer{
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+  }
+  footer p{
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer .seccion-escuelas{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+footer .icono-escuelas{
+  width: 35px;
+  height: auto;
+  margin-bottom: 20px;
+}
+footer .icono-escuelas:last-of-type{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+footer .mg-b-20{
+  margin-bottom: 0px!important;
+}
+footer .spo{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+footer .mobi{
+  max-width: 70%;
+  height: auto;
+}
+footer .insti {
+  max-width: 70%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
+/* --------- End Estilos Footer ---------- */
+}
+
+@media (max-width: 425px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  body{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /*  --------------- Estilos Header -------- */
+  .contenido-navBar .logo{
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+  }
+  .contenido-navBar button{
+    font-size: 14px;
+    color: white;
+  }
+
+  .contenido-navBar{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cotenido-carrusel{
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* ------ Estilos Main ----- */ 
+  main h2 {
+    font-size: 16px!important;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 60px!important; /* Pendiente de aignar como una solución*/
+  }
+  main .sub-title{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+  .text-about_us{
+    text-align: justify;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .slogan{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: .6;
+  }
+  /* ------ End Main ------- */
+
+  /* -------- Estilos Section Technologys -------- */
+  section h2 {
+    font-size: 16px!important;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .carrusel-desktop-technology{
+    display: none;
+  }
+  .carrusel-mobile-technology{
+    display: block;
+  }
+  .contenido-tech{
+    height: auto;
+  }
+  .contenido-tech-item.active{
+    height: 160;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido-tech-item.active img{
+    height: 50px!important;
+    width: auto!important;
+    margin-bottom: 100px;
+  }
+  .description-item-tech h5{
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  /* ---------- End Section Technologys ----------- */
+
+  /* ------------- Estilos Perfiles ------------- */
+  section h2.the-enthusiastic{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px!important;
+    font-weight: lighter;
+    margin-top: 80px;
+    line-height: 20px;
+    color:rgb(111, 189, 192);
+  }
+  .lista-perfiles{
+    display: none;
+  }
+  .carrusel-perfiles{
+    display: block;
+  }
+  .lista-carrusel-perfiles{
+    text-align: center;
+  }
+  /* ------------------ Section Perfiles [Cards] ------------ */
+  .card{
+  width: 85%;
+  max-height: 400px;
+  }
+  /*  --------- Stilos Perfiles [Contenedor de Card-items]---------------- */
+  .card-perfil-scroll{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 450px;
+  }
+  .portada {
+    height: 44px;
+    width: 100%;
+  }
+  .portada img {
+    width: 80px;
+    height: 80px;
+    margin-top: 25px;
+    transform: translateY(5px);
+  }
+  .card-body{
+    max-height: 600px;
+  }
+  .card-body.mg-top-30{
+    margin-top: -5px;
+  }
+    .card-perfil h5{
+      font-size: 12px!important;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .card-subtitle{
+      font-size: 12px;
+      font-weight:lighter;
+      letter-spacing: 1.6px;
+      font-weight: bolder;
+    }
+    .card-text{
+      margin-top: 15px;
+      font-size: 11.3px!important;
+      font-weight: lighter;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      max-height: auto;     
+    }
+    .card-text.mg-b-20{
+      margin-bottom: 0px;
+    }
+    .card-btn-verPerfil{
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-btn-verPerfil a{
+      font-size: 12px;
+    }
+    .carousel-indicators{
+      bottom: -50px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 80%;
+    }
+
+  /* ------------- Estilos Footer ---------- */
+  footer{
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+  }
+  footer p{
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer .seccion-escuelas{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+footer .icono-escuelas{
+  width: 35px;
+  height: auto;
+  margin-bottom: 20px;
+}
+footer .icono-escuelas:last-of-type{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+footer .mg-b-20{
+  margin-bottom: 0px!important;
+}
+footer .spo{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+footer .mobi{
+  max-width: 80%;
+  height: auto;
+}
+footer .insti {
+  max-width: 80%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
+/* --------- End Estilos Footer ---------- */
+}
+
+
+
+/* Dispositivos mayores o iguales a 365px */
+
+
+@media (max-width: 365px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px!important;
+  }
+  .navbar ul li a{
+    font-size: 12px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 10px 20px;
+    padding: 10px 20px;
+  }
+  body{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /*  --------------- Estilos Header -------- */
+  .contenido-navBar .logo{
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  .contenido-navBar button{
+    font-size: 14px;
+    color: wheat;
+  }
+  .contenido-navBar{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cotenido-carrusel{
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* ------ Estilos Main ----- */ 
+  main h2 {
+    font-size: 15px!important;
+    font-weight: 400;
+    color: white;
+    margin-top: 60px!important; /* Pendiente de aignar como una solución*/
+  }
+  main .sub-title{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+  .text-about_us{
+    text-align: justify;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .slogan{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: .6;
+  }
+  /* ------ End Main ------- */
+
+  /* -------- Estilos Section Technologys -------- */
+  section h2 {
+    font-size: 15px!important;
+    font-weight: 400;
+  }
+  .carrusel-desktop-technology{
+    display: none;
+  }
+  .carrusel-mobile-technology{
+    display: block;
+  }
+  .contenido-tech{
+    height: auto;
+  }
+  .contenido-tech-item.active{
+    height: 160;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido-tech-item.active img{
+    height: 50px!important;
+    width: auto!important;
+    margin-bottom: 100px;
+  }
+  .description-item-tech h5{
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  /* ---------- End Section Technologys ----------- */
+
+  /* ------------- Estilos Perfiles ------------- */
+  section h2.the-enthusiastic{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px!important;
+    font-weight: lighter;
+    margin-top: 80px;
+    line-height: 15px;
+    color:rgb(111, 189, 192);
+  }
+  .lista-perfiles{
+    display: none;
+  }
+  .carrusel-perfiles{
+    display: block;
+  }
+  .lista-carrusel-perfiles{
+    text-align: center;
+  }
+  /* ------------------ Section Perfiles [Cards] ------------ */
+  .card{
+  width: 90%;
+  max-height: 410px;
+  }
+  /*  --------- Stilos Perfiles [Contenedor de Card-items]---------------- */
+  .card-perfil-scroll{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 410px;
+  }
+  .portada {
+    height: 44px;
+    width: 100%;
+  }
+  .portada img {
+    width: 65px;
+    height: 650px;
+    margin-top: 10px;
+    transform: translateY(5px);
+  }
+  .card-body{
+    max-height: 600px;
+  }
+  .card-body.mg-top-30{
+    margin-top: -20px;
+  }
+    .card-perfil h5{
+      font-size: 12px!important;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .card-subtitle{
+      font-size: 12px;
+      font-weight:lighter;
+      letter-spacing: 1.7px;
+      font-weight: bolder;
+    }
+    .card-text{
+      margin-top: 15px;
+      font-size: 11px!important;
+      font-weight: lighter;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      max-height: auto;     
+    }
+    .card-text.mg-b-20{
+      margin-bottom: 0px;
+    }
+    .card-btn-verPerfil{
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-btn-verPerfil a{
+      font-size: 12px;
+    }
+    .carousel-indicators{
+      bottom: -50px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 80%;
+    }
+
+  /* ------------- Estilos Footer ---------- */
+  footer{
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+  }
+  footer p{
+    font-size: 11px;
+    font-weight: lighter;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer .seccion-escuelas{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+footer .icono-escuelas{
+  width: 35px;
+  height: auto;
+  margin-bottom: 20px;
+}
+footer .icono-escuelas:last-of-type{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+footer .mg-b-20{
+  margin-bottom: 0px!important;
+}
+footer .spo{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+footer .mobi{
+  max-width: 100%;
+  height: auto;
+}
+footer .insti {
+  max-width: 100%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
+/* --------- End Estilos Footer ---------- */
+}
+
+
+@media (max-width: 320px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li a{
+    font-size: 12px!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px;
+  }
+  body{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /*  --------------- Estilos Header -------- */
+  .contenido-navBar .logo{
+    font-size: 13px;
+    letter-spacing: 1.9;
+  }
+  .contenido-navBar button{
+    font-size: 10px;
+    color: wheat;
+  }
+  .contenido-navBar{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cotenido-carrusel{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* ------ Estilos Main ----- */ 
+  main h2 {
+    font-size: 14px!important;
+    font-weight: 400;
+    color: white;
+    margin-top: 60px!important; /* Pendiente de aignar como una solución*/
+  }
+  main .sub-title{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+  .text-about_us{
+    text-align: justify;
+    font-size: 11px;
+    font-weight: lighter;
+  }
+  .slogan{
+    font-size: 11px;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: .6;
+  }
+  /* ------ End Main ------- */
+
+  /* -------- Estilos Section Technologys -------- */
+  section h2 {
+    font-size: 14px!important;
+    font-weight: 400;
+  }
+  .carrusel-desktop-technology{
+    display: none;
+  }
+  .carrusel-mobile-technology{
+    display: block;
+  }
+  .contenido-tech{
+    height: auto;
+  }
+  .contenido-tech-item.active{
+    height: 160;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido-tech-item.active img{
+    height: 50px!important;
+    width: auto!important;
+    margin-bottom: 100px;
+  }
+  .description-item-tech h5{
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  /* ---------- End Section Technologys ----------- */
+
+  /* ------------- Estilos Perfiles ------------- */
+  section h2.the-enthusiastic{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9px!important;
+    font-weight: lighter;
+    margin-top: 80px;
+    line-height: 15px;
+    color:rgb(111, 189, 192);
+  }
+  .lista-perfiles{
+    display: none;
+  }
+  .carrusel-perfiles{
+    display: block;
+  }
+  .lista-carrusel-perfiles{
+    text-align: center;
+  }
+  /* ------------------ Section Perfiles [Cards] ------------ */
+  .card{
+  width: 100%;
+  max-height: 400px;
+  }
+  /*  --------- Stilos Perfiles [Contenedor de Card-items]---------------- */
+  .card-perfil-scroll{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+  }
+  .portada {
+    height: 34px;
+    width: 100%;
+  }
+  .portada img {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    transform: translateY(5px);
+  }
+  .card-body{
+    max-height: 600px;
+  }
+  .card-body.mg-top-30{
+    margin-top: -20px;
+  }
+    .card-perfil h5{
+      font-size: 12px!important;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .card-subtitle{
+      font-size: 12px;
+      font-weight:lighter;
+      letter-spacing: 1.7px;
+      font-weight: bolder;
+    }
+    .card-text{
+      margin-top: 15px;
+      font-size: 11px!important;
+      font-weight: lighter;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      max-height: auto;     
+    }
+    .card-text.mg-b-20{
+      margin-bottom: 0px;
+    }
+    .card-btn-verPerfil{
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-btn-verPerfil a{
+      font-size: 10px;
+    }
+    .carousel-indicators{
+      bottom: -50px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 80%;
+    }
+  /* ------------- Estilos Footer ---------- */
+  footer{
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+  }
+  footer p{
+    font-size: 10px;
+    font-weight: lighter;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer .seccion-escuelas{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+footer .icono-escuelas{
+  width: 35px;
+  height: auto;
+  margin-bottom: 20px;
+}
+footer .icono-escuelas:last-of-type{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+footer .mg-b-20{
+  margin-bottom: 0px!important;
+}
+footer .spo{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+footer .mobi{
+  max-width: 100%;
+  height: auto;
+}
+footer .insti {
+  max-width: 100%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
+/* --------- End Estilos Footer ---------- */
+}
+
+
+@media (max-width: 270px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px;
+  }
+  body{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /*  --------------- Estilos Header -------- */
+  .contenido-navBar .logo{
+    font-size: 12px;
+  }
+  .contenido-navBar button{
+    font-size: 10px;
+    color: wheat;
+  }
+  .contenido-navBar{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cotenido-carrusel{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* ------ Estilos Main ----- */ 
+  main h2 {
+    font-size: 14px!important;
+    font-weight: 400;
+    color: white;
+    margin-top: 50px!important; /* Pendiente de aignar como una solución*/
+  }
+  main .sub-title{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+  .text-about_us{
+    text-align: justify;
+    font-size: 10px;
+    font-weight: lighter;
+  }
+  .slogan{
+    font-size: 10px;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: .6;
+  }
+  /* ------ End Main ------- */
+
+  /* -------- Estilos Section Technologys -------- */
+  section h2 {
+    font-size: 14px!important;
+    font-weight: 400;
+  }
+  .carrusel-desktop-technology{
+    display: none;
+  }
+  .carrusel-mobile-technology{
+    display: block;
+  }
+  .contenido-tech{
+    height: auto;
+  }
+  .contenido-tech-item.active{
+    height: 160;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido-tech-item.active img{
+    height: 50px!important;
+    width: auto!important;
+    margin-bottom: 100px;
+  }
+  .description-item-tech h5{
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  /* ---------- End Section Technologys ----------- */
+
+  /* ------------- Estilos Perfiles ------------- */
+  section h2.the-enthusiastic{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9px!important;
+    font-weight: lighter;
+    margin-top: 80px;
+    line-height: 15px;
+    color:rgb(111, 189, 192);
+  }
+  .lista-perfiles{
+    display: none;
+  }
+  .carrusel-perfiles{
+    display: block;
+  }
+  .lista-carrusel-perfiles{
+    text-align: center;
+  }
+  /* ------------------ Section Perfiles [Cards] ------------ */
+  .card{
+  width: 100%;
+  max-height: 450px;
+  }
+  /*  --------- Stilos Perfiles [Contenedor de Card-items]---------------- */
+  .card-perfil-scroll{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 450px;
+  }
+  .portada {
+    height: 34px;
+    width: 100%;
+  }
+  .portada img {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    transform: translateY(5px);
+  }
+  .card-body{
+    max-height: 600px;
+  }
+  .card-body.mg-top-30{
+    margin-top: -20px;
+  }
+    .card-perfil h5{
+      font-size: 11px!important;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .card-subtitle{
+      font-size: 11px;
+      font-weight:lighter;
+      letter-spacing: 1.7px;
+      font-weight: bolder;
+    }
+    .card-text{
+      margin-top: 15px;
+      font-size: 11px!important;
+      font-weight: lighter;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      max-height: auto;     
+    }
+    .card-text.mg-b-20{
+      margin-bottom: 0px;
+    }
+    .card-btn-verPerfil{
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-btn-verPerfil a{
+      font-size: 10px;
+    }
+    .carousel-indicators{
+      bottom: -50px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 80%;
+    }
+
+  /* ------------- Estilos Footer ---------- */
+  footer{
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+  }
+  footer p{
+    font-size: 10px;
+    font-weight: lighter;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer .seccion-escuelas{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+footer .icono-escuelas{
+  width: 35px;
+  height: auto;
+  margin-bottom: 20px;
+}
+footer .icono-escuelas:last-of-type{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+footer .mg-b-20{
+  margin-bottom: 0px!important;
+}
+footer .spo{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+footer .mobi{
+  max-width: 100%;
+  height: auto;
+}
+footer .insti {
+  max-width: 100%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
+/* --------- End Estilos Footer ---------- */
+}
+
+
+
+@media (max-width: 248px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px;
+  }
+  .navbar ul li a{
+    font-size: 11px!important;
+  }
+  .navbar ul li .btn-login{
+    margin: 5px 10px;
+    padding: 5px 10px;
+  }
+  .navbar ul li .btn-logout{
+    margin: 5px 10px;
+    padding: 5px 10px;
+  }
+  body{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /*  --------------- Estilos Header -------- */
+  .contenido-navBar .logo{
+    font-size: 12px;
+  }
+  .contenido-navBar button{
+    font-size: 10px;
+    color: wheat;
+  }
+  .contenido-navBar{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cotenido-carrusel{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+  /* ------ Estilos Main ----- */ 
+  main h2 {
+    font-size: 14px!important;
+    font-weight: 400;
+    color: white;
+    margin-top: 40px!important; /* Pendiente de aignar como una solución*/
+  }
+  main .sub-title{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+  .text-about_us{
+    text-align: justify;
+    font-size: 10px;
+    font-weight: lighter;
+  }
+  .slogan{
+    font-size: 10px;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: .6;
+  }
+  /* ------ End Main ------- */
+
+  /* -------- Estilos Section Technologys -------- */
+  section h2 {
+    font-size: 14px!important;
+    font-weight: 400;
+  }
+  .carrusel-desktop-technology{
+    display: none;
+  }
+  .carrusel-mobile-technology{
+    display: block;
+  }
+  .contenido-tech{
+    height: auto;
+  }
+  .contenido-tech-item.active{
+    height: 160;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido-tech-item.active img{
+    height: 50px!important;
+    width: auto!important;
+    margin-bottom: 100px;
+  }
+  .description-item-tech h5{
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  /* ---------- End Section Technologys ----------- */
+
+  /* ------------- Estilos Perfiles ------------- */
+  section h2.the-enthusiastic{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9px!important;
+    font-weight: lighter;
+    margin-top: 80px;
+    line-height: 15px;
+    color:rgb(111, 189, 192);
+  }
+  .lista-perfiles{
+    display: none;
+  }
+  .carrusel-perfiles{
+    display: block;
+  }
+  .lista-carrusel-perfiles{
+    text-align: center;
+  }
+  /* ------------------ Section Perfiles [Cards] ------------ */
+  .card{
+  width: 100%;
+  max-height: 450px;
+  }
+  /*  --------- Stilos Perfiles [Contenedor de Card-items]---------------- */
+  .card-perfil-scroll{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 450px;
+  }
+  .portada {
+    height: 34px;
+    width: 100%;
+  }
+  .portada img {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    transform: translateY(5px);
+  }
+  .card-body{
+    max-height: 600px;
+  }
+  .card-body.mg-top-30{
+    margin-top: -20px;
+  }
+    .card-perfil h5{
+      font-size: 10px!important;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .card-subtitle{
+      font-size: 10px;
+      font-weight:lighter;
+      letter-spacing: 1.7px;
+      font-weight: bolder;
+    }
+    .card-text{
+      margin-top: 15px;
+      font-size: 10px!important;
+      font-weight: lighter;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      max-height: auto;     
+    }
+    .card-text.mg-b-20{
+      margin-bottom: 0px;
+    }
+    .card-btn-verPerfil{
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-btn-verPerfil a{
+      font-size: 9px;
+    }
+    .carousel-indicators{
+      bottom: -50px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 80%;
+    }
+
+  /* ------------- Estilos Footer ---------- */
+  footer{
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+    padding: 0;
+  }
+  footer p{
+    font-size: 10px;
+    font-weight: lighter;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer .seccion-escuelas{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+footer .icono-escuelas{
+  width: 35px;
+  height: auto;
+  margin-bottom: 20px;
+}
+footer .icono-escuelas:last-of-type{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+footer .mg-b-20{
+  margin-bottom: 0px!important;
+}
+footer .spo{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+footer .mobi{
+  max-width: 100%;
+  height: auto;
+}
+footer .insti {
+  max-width: 100%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
+/* --------- End Estilos Footer ---------- */
+}
+
+
+
+@media (max-width: 210px){
+  .navbar ul{
+    display: flex!important;
+    justify-content: flex-start!important;
+    align-items: center!important;
+  }
+  .navbar ul li{
+    margin: 10px 20px;
+  }
+  body{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /*  --------------- Estilos Header -------- */
+  .contenido-navBar .logo{
+    font-size: 10px;
+    letter-spacing: .4px;
+    font-weight: bolder;
+  }
+  .contenido-navBar button{
+    font-size: 10px;
+    color: wheat;
+  }
+  .contenido-navBar{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cotenido-carrusel{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* ------ Estilos Main ----- */ 
+  main h2 {
+    font-size: 14px!important;
+    font-weight: 400;
+    color: white;
+  }
+  main .sub-title{
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+  .text-about_us{
+    text-align: justify;
+    font-size: 10px;
+    font-weight: lighter;
+  }
+  .slogan{
+    font-size: 10px;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: .6;
+  }
+  /* ------ End Main ------- */
+
+  /* -------- Estilos Section Technologys -------- */
+  section h2 {
+    font-size: 14px!important;
+    font-weight: 400;
+  }
+  .carrusel-desktop-technology{
+    display: none;
+  }
+  .carrusel-mobile-technology{
+    display: block;
+  }
+  .contenido-tech{
+    height: auto;
+  }
+  .contenido-tech-item.active{
+    height: 160;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido-tech-item.active img{
+    height: 50px!important;
+    width: auto!important;
+    margin-bottom: 100px;
+  }
+  .description-item-tech h5{
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  /* ---------- End Section Technologys ----------- */
+
+  /* ------------- Estilos Perfiles ------------- */
+  section h2.the-enthusiastic{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 7px!important;
+    font-weight: lighter;
+    margin-top: 80px;
+    line-height: 13px;
+    color:rgb(111, 189, 192);
+  }
+  .lista-perfiles{
+    display: none;
+  }
+  .carrusel-perfiles{
+    display: block;
+  }
+  .lista-carrusel-perfiles{
+    text-align: center;
+  }
+  /* ------------------ Section Perfiles [Cards] ------------ */
+  .card{
+  width: 100%;
+  max-height: 450px;
+  }
+  /*  --------- Stilos Perfiles [Contenedor de Card-items]---------------- */
+  .card-perfil-scroll{
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 450px;
+  }
+  .portada {
+    height: 24px;
+    width: 100%;
+  }
+  .portada img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    transform: translateY(5px);
+  }
+  .card-body{
+    max-height: 600px;
+  }
+  .card-body.mg-top-30{
+    margin-top: -20px;
+  }
+    .card-perfil h5{
+      font-size: 7px!important;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .card-subtitle{
+      font-size: 7px;
+      font-weight:lighter;
+      letter-spacing: 1.7px;
+      font-weight: bolder;
+    }
+    .card-text{
+      margin-top: 15px;
+      font-size: 8.7px!important;
+      font-weight: lighter;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      max-height: auto;     
+    }
+    .card-text.mg-b-20{
+      margin-bottom: 0px;
+    }
+    .card-btn-verPerfil{
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-btn-verPerfil a{
+      font-size: 9px;
+    }
+    .carousel-indicators{
+      bottom: -50px; /*bottom: -50px*/
+    }
+    hr {
+      margin: 30px auto;
+      max-width: 80%;
+    }
+
+  /* ------------- Estilos Footer ---------- */
+  footer{
+    margin: 0 auto;
+    max-width: 100%;
+    display: block;
+  }
+  footer p{
+    font-size: 10px;
+    font-weight: lighter;
+  }
+  .footer-mobile {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer .seccion-escuelas{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+}
+footer .icono-escuelas{
+  width: 35px;
+  height: auto;
+  margin-bottom: 20px;
+}
+footer .icono-escuelas:last-of-type{
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+footer .mg-b-20{
+  margin-bottom: 0px!important;
+}
+footer .spo{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+footer .mobi{
+  max-width: 100%;
+  height: auto;
+}
+footer .insti {
+  max-width: 100%;
+  height: auto;
+}
+footer .grueso{
+  filter: brightness(100);
+}
+
+/* --------- End Estilos Footer ---------- */
+}

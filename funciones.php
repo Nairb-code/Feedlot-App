@@ -56,7 +56,11 @@ function getPiePagina() {
 <small class="text-muted">EEST N°8 Almafuerte - ET N°1 Otto Krause<br>Bruno Caruso - Franco Sancristobal - Brian Duran - Gonzalo Benavente
 </small>
 </div>
-<button type="button" class="btn btn-outline-primary" style="font-size:15px;" onclick="location.href='about us.php'">Sobre Nosotros</button>
+<!--
+<button type="button" class="btn btn-outline-primary" style="font-size:15px;" onclick="location.href='about us.php'">Sobre Nosotros</button> -->
+<p class="text-center"><a href="./about us.php"><span class="badge  badge badge-primary">Sobre Nosotros</span></a></p>
+
+
 <?php
 }
 
