@@ -100,16 +100,11 @@ include "login.php";
         <h2 class="text-center mg-top-30 mg-top-50 mx-top">Sobre Nosotros</h2>
         <p class="sub-title">Enthusiastic technologists.</p>
         <p class="text-about_us">
-            Un grupo de jóvenes autodidactas apasionados por la tecnología participó en las
-            olimpiadas de programación organizadas por el INET y el Ministerio de Educación de la Republica Argentina. 
-            Desafiados por una situación problemática relacionada con la
-            administración y gestión de un Feedlot de ganado, pusieron a prueba sus
-            habilidades y trabajaron juntos para encontrar una solución innovadora.
-            A pesar de ser de diferentes instituciones, supieron colaborar en equipo y
-            presentar una solución útil y eficaz que fue destacada por los
-            evaluadores de la competencia. Este logro demostró su capacidad de
-            enfrentar desafíos y su potencial como futuros líderes en el campo de la
-            tecnología.
+        Un grupo de apasionados jóvenes desarrolladores autodidactas participaron en las olimpiadas de programación organizadas por el INET y el Ministerio de Educación de la Republica Argentina. Al enfrentarse a una situación problemática relacionada con la administración y gestión de un Feedlot de ganado, demostraron su determinación y habilidades trabajando juntos para encontrar una solución innovadora y eficaz.<br>
+
+        A pesar de provenir de diferentes instituciones, su compromiso con el trabajo en equipo y su pasión por la tecnología les permitió colaborar de manera efectiva, obteniendo el reconocimiento y la admiración de los evaluadores de la competencia. Este logro no solo demostró su capacidad para enfrentar desafíos, sino también su potencial como futuros líderes en el campo de la tecnología.<br>
+
+        Ser un desarrollador autodidacta puede ser un camino lleno de desafíos, pero creemos que con pasión y determinación cualquier meta es alcanzable. Este grupo de jóvenes nos ha demostrado que, con esfuerzo y dedicación, es posible superar obstáculos y alcanzar el éxito en el mundo de la tecnología. Su ejemplo es inspirador para aquellos que, como ellos, buscan destacarse en esta industria tan competitiva y en constante evolución.
         </p>
         <p class="slogan text-center">
             ¡Nada es imposible cuando se tiene pasión, determinación y trabajo en
@@ -552,25 +547,34 @@ include "login.php";
             <small class="text-reset">
                 <div class="row footer-mobile">
                     <div class="col spo">
+                      <a href="https://www.inet.edu.ar/" target="_blank">
                         <img src="img/img-institutos/icon-inet.png" class="by mobi grueso"
                             alt="Instituto Nacional de Educación Tecnologíca">
-
+                      </a>
                     </div>
                     <div class="col mg-b-20">
                         <div class="seccion-escuelas mg-b-20">
+                          <a href="https://tecnica8lanus.edu.ar/" target="_blank">
                             <img src="img/img-institutos/icon-EEST.png" alt="Escuela Tecnica Almafuerte"
                                 class="icono-escuelas">
+                          </a>
                             <p class="text-col">EEST N°8 Almafuerte - ET N°1 Otto Krause</p>
+                            <a href="https://www.ottokrause.edu.ar/" target="_blank">
                             <img src="img/img-institutos/icon-ottokrause.png" alt="Escuela Técnica Otto Krause"
                                 class="icono-escuelas">
+                            </a>
                         </div>
                         <br />
                         <p>Bruno Caruso - Franco Sancristobal - Brian Duran - Gonzalo Benavente</p>
                     </div>
                     <div class="col spo">
-                        <img src="img/img-institutos/icono-caba.png" class="by insti"
+                      <a href="https://buenosaires.gob.ar/" target="_blank" class="by insti">
+                        <img src="img/img-institutos/icono-caba.png" class="by insti grueso"
                             alt="Ciudad Autónoma de Buenos Aires">
+                      </a>
+                      <a href="https://www.argentina.gob.ar/noticias/olimpiadas-nacionales-de-programacion-computacion-e-informatica-2018" target="_blank" class="by insti grueso">
                         <img src="img/img-institutos/icon-gobAr.png" class="by insti" alt="Gobierno">
+                      </a>
                     </div>
                 </div>
 
