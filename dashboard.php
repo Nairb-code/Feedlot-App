@@ -14,13 +14,6 @@ if(!isset($_SESSION['idUsuario'])) {
   </head>
 
   <body>  
-
-  <!-- ELEMENTO AGREGADO 27/04 -->
-  <a class="icon-link icon-link-hover" style="letter-spacing: 2px; transition: color 0.15s ease-in-out;" href="./about us.php"><font _mstmutation="1" _msttexthash="226915" _msthash="210"> Enlace de icono </font><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-    </svg>
-    </a>
-    <!-- end -->
     <div class="container mt-5 border rounded shadow p-3 mb-5 bg-white rounded contresp">
       <div align="center" class="pt-5 pl-5 pr-5">
       <h1>Problematica Olimpiadas</h1><br>

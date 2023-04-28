@@ -1,5 +1,5 @@
 <?php
-include "conexion.php"; // Script de conexion a la base de datos
+include "includes.php"; // include "conexion.php";
 include "login.php";
 ?>
 
@@ -281,11 +281,7 @@ include "login.php";
                         </div>
                         <div class="card-text">
                             <p>
-                                RPA Developer con experiencia en Blue Prism, especializado en proyectos de banca y
-                                finanzas. Mi enfoque en RPA se complementa con mi interés en el desarrollo Full Stack
-                                para poder ofrecer soluciones más completas e innovadoras que aborden los desafiós
-                                empresariales y las necesidades específicas del cliente. Estoy buscando expandir mis
-                                habilidades en el desarrollo front y banck end.
+                            RPA Developer.He trabajado en varios proyectos para la industria bancaria y financiera, implementando soluciones de automatización para mejorar la eficiencia y calidad del servicio al cliente. Me enfoco en RPA pero también busco expandir mis habilidades Full Stack para ofrecer soluciones innovadoras que aborden desafiós empresariales y satisfagan necesidades específicas del cliente.
                             </p>
                         </div>
                         <div class="card-btn-verPerfil">
@@ -420,11 +416,7 @@ include "login.php";
                             </div>
                             <div class="card-text mg-b-20">
                                 <p>
-                                    RPA Developer con experiencia en Blue Prism, especializado en proyectos de banca y
-                                    finanzas. Mi enfoque en RPA se complementa con mi interés en el desarrollo Full
-                                    Stack para poder ofrecer soluciones más completas e innovadoras que aborden los
-                                    desafiós empresariales y las necesidades específicas del cliente. Estoy buscando
-                                    expandir mis habilidades en el desarrollo front y banck end.
+                                    RPA Developer.He trabajado en varios proyectos para la industria bancaria y financiera, implementando soluciones de automatización para mejorar la eficiencia y calidad del servicio al cliente. Me enfoco en RPA pero también busco expandir mis habilidades Full Stack para ofrecer soluciones innovadoras que aborden desafiós empresariales y satisfagan necesidades específicas del cliente.
                                 </p>
                             </div>
                             <div class="card-btn-verPerfil">

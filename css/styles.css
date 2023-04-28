@@ -4,7 +4,6 @@
   --portada-bruno: url(../img/img-perfiles/perfil-bruno/portada-bruno.png);
   --portada-gonzalo: url(../img/img-perfiles/perfil-gonzalo/portada-gonzalo.png);
 }
-
 .icon-bootstrap{
   filter: grayscale(100%);
 }
