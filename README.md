@@ -1,25 +1,19 @@
 # olimpiadasinet
-Problematica de Olimpiadas Programacion INET 2018
+Problematica de Olimpiadas Programacion INET 2018 | reconstruccion de la App | 2023
 
-http://probl-olimpiadas.herokuapp.com
+http://probl-olimpiadas.herokuapp.com (old) | 
 
-Username: bruno
+Username: brian
 
-Pass: 1234
+Password: 123
 
 Create new user: http://probl-olimpiadas.herokuapp.com/instalacion.php
 
 
-/*  Notas para ajustar: */
+Developers: 
 
-/* Recomendación */
-Importar las tablas de creadas de la carpeta "db" para  contener una base de datos actualizada. 
-/*  ------- */
+1- https://www.linkedin.com/in/brian-duran/
+2- https://www.linkedin.com/in/brunocarusok/
+3- https://www.linkedin.com/in/franco-sancristobal-478b7b1ab/
+4- https://www.linkedin.com/in/franco-sancristobal-478b7b1ab/
 
-/*  AJUSTES POR HACER   */
-
-1. Realizar el ajuste correspondiente para modficiar Corrales, Zonas y/o Animales ya que al momento de realizar el modifcar una dato la misma contempla ciertos datos predefinidos en la dropdown (lista desplegable). Deberia aparecer aparecer en la lista desplegable todas las opciones que estan en la base de datos.
-
-2. Ajustar las opciones disponibles de unidades de medidas, al momento de modificar algunas de la seccion de Zona por ejemplo. Mismo procedimiento para las demas secciones de Corral y Animales.
-
-/*  ------------------ */
