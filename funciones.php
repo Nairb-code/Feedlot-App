@@ -35,16 +35,16 @@ function getHead($titulo) {
     ?>
     <title><?php echo "Olimpiadas - ".$titulo; ?></title>
     <!-- Bootstrap -->
-    <?php echo "<link href=".$root."/css/bootstrap.min.css rel='stylesheet'>"; ?>
-    <?php echo "<script src=".$root."/js/bootstrap.min.js></script>"; ?>
+    <?php echo "<link href='css/bootstrap.min.css' rel='stylesheet'>"; ?>
+    <?php echo "<script src='js/bootstrap.min.js'></script>"; ?>
 
     <!-- CSS adicional -->
-    <?php echo "<link href=".$root."/css/tablas.css rel='stylesheet'>"; ?>
-    <?php echo "<link href=".$root."/css/fixes.css rel='stylesheet'>"; ?>
+    <?php echo "<link href='css/tablas.css' rel='stylesheet'>"; ?>
+    <?php echo "<link href='css/fixes.css' rel='stylesheet'>"; ?>
 
     <!-- FontAwesome -->
-    <?php echo "<link href=".$root."/css/fontawesome.css rel='stylesheet'>"; ?>
-    <?php echo "<script src=".$root."/js/fontawesome.js></script>"; ?>
+    <?php echo "<link href='css/fontawesome.css' rel='stylesheet'>"; ?>
+    <?php echo "<script src='js/fontawesome.js'></script>"; ?>
 
     <?php 
 } // Output: Olimpiadas - nombreTitulo (en el titulo de las paginas)

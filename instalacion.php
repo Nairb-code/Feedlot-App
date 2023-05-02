@@ -1,5 +1,5 @@
 <?php 
-include $_SERVER['DOCUMENT_ROOT'].'/includes.php';
+include $_SERVER['DOCUMENT_ROOT'].'/olimpiadasinet/includes.php';
 ?>
 
 <html>
@@ -25,8 +25,14 @@ include $_SERVER['DOCUMENT_ROOT'].'/includes.php';
         if ($nombre && $usuario && $clave) {
          // Comenzamos la fase de registro si todos los campos fueron completados
         // Efectuamos el registro del operador
-        if (mysqli_query($con, "INSERT INTO operador VALUES ('', '$nombre', '$usuario', '$clave')") ) {
+        if (mysqli_query($con, "INSERT INTO operador (`id`, `nombre`, `usuario`, `clave`) VALUES (NULL,'$nombre', '$usuario', '$clave')") ) {
             $msg = "<div class='alert alert-success w-50'>Registrado correctamente</div>";
+            echo "<script>
+            setTimeout(function() {
+                window.location.href = './index.php';
+            }, 3000);
+        </script>";
+
         }else{
             $msg = "<div class='alert alert-danger w-50'>Se produjo un error al registrarse</div>";
         }

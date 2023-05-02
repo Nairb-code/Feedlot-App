@@ -40,7 +40,9 @@ include "login.php";
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-block" name="login" type="submit">Iniciar sesion</button>
-    </form><br> 
+    </form><br>
+    <p><a href="instalacion.php" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Registrarse</a></p>
+    <!--<a class="text-muted text-black" href="instalacion.php">Registrarse</a>--><br>
     <a class="text-muted text-black" href="arduino/index.php">Ver estadisticas de Arduino</a><br>
 </div>
 <!-- Pie de pagina  -->

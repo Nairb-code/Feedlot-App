@@ -9,10 +9,11 @@ $db = "heroku_391f3f41427f09f";
 $con = mysqli_connect ($host, $usuario, $pass, $db);
 */
 
-$host = "127.0.0.10";
-$usuario = "root";
-$pass = "/*MalcolmYoung509!*/";
-$db = "feedlot";
+$host = "localhost";
+$usuario = "id20663349_admin";
+$pass = "at5g{2pmCOs@1c?0";
+$db = "id20663349_feedlot";
+
 
 $con = mysqli_connect ($host, $usuario, $pass, $db);
 ?>
