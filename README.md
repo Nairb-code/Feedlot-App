@@ -1,13 +1,13 @@
 # olimpiadasinet
 Problematica de Olimpiadas Programacion INET 2018 | reconstruccion de la App | 2023
 
-http://probl-olimpiadas.herokuapp.com (old) | 
+http://probl-olimpiadas.herokuapp.com (old) | https://feedlotapp.000webhostapp.com/ (new)
 
 Username: brian
 
 Password: 123
 
-Create new user: http://probl-olimpiadas.herokuapp.com/instalacion.php
+Create new user: https://feedlotapp.000webhostapp.com/instalacion.php
 
 
 Developers: 
